@@ -7,19 +7,19 @@ export default {
         icon: "src/assets/HTML&CSS.svg",
     },
 
-    // {
-    //     id: 2,
-    //     title: "Javascript",
-    //     description: "JS is a lightweight, interpreted, object-oriented language with first-class functions. That' what makes your website attractive :)",
-    //     icon: "src/assets/JS_Icon.svg",
-    // },
+    {
+         id: 2,
+         title: "Javascript",
+        description: "JS is a lightweight, interpreted, object-oriented language with first-class functions. That' what makes your website attractive :)",
+         icon: "src/assets/JS_Icon.svg",
+    },
 
-    // {
-    //     id: 3,
-    //     title: "React JS",
-    //     description: "Declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.",
-    //     icon: "src/assets/React_Icon.svg",
-    // },
+    {
+       id: 3,
+       title: "React JS",
+       description: "Declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.",
+       icon: "src/assets/React_Icon.svg",
+    },
 
     // {
     //     id: 4,

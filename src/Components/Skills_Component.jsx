@@ -4,7 +4,7 @@ import React from 'react'
 
 const Skills_Component = (props) => {
   return (
-    <div className='flex items-center'>
+    <div>
       <div className='skills_cont'>
         <img src={props.item.icon} alt="" className='max-w-[90px] lg:max-w-[154px]  relative z-20 top-14 lg:top-20'/>
         <div className='skills_text max-h-[312px] lg:max-h-[493px] px-[28px] lg:pt-[90px] pt-[70px] bg-white border-2 border-[#06283D] font-oswald text-dark_blue'>

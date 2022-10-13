@@ -1,8 +1,7 @@
 import React from 'react'
 import data from '../data'
 import Skills_Component from './Skills_Component'
-import left from '../assets/Left Arrow.svg'
-import right from '../assets/Right Arrow.svg'
+import check from '../assets/Checkbox_Mob.svg'
 
 
 const Skills = () => {
@@ -18,15 +17,14 @@ const Skills = () => {
     ) 
 })
   return (
-    <div className='bg-[#E4EDF3] lg:pt-72 pt-16 lg:pb-36 pb-14'>
+    <div className='bg-blue1 skills  lg:pt-72 pt-16 lg:pb-36 pb-14'>
       <div className='text-white text-center lg:text-left mt-10'>
-        <h2 className='lg:ml-32 skills_title font-bold font-oswald lg:text-[90px] text-4xl'>My <span className='text-bright_yellow'>Skill</span></h2>
+        <h2 className='lg:ml-32 skills_title font-bold font-oswald lg:text-[90px] text-4xl'>My <span className='text-bright_yellow'>Skills</span></h2>
       </div>
-      <div className='flex justify-center items-center lg:space-x-12  space-x-3'>
-        <img src={left} alt="" className='lg:w-[108px] lg:pt-[8%] lg:pl-6 pt-[30%]'/>
+      <div className='flex justify-center flex-wrap items-center lg:space-x-12  space-x-3'>
         {skill_card}
-        <img src={right} alt="" className='lg:w-[108px] lg:pt-[8%] lg:pr-6 pt-[30%]'/>
       </div>
+      <img src={check} alt="" className=' relative w-full h-full top-20 overflow-hidden lg:top-40' />
     </div>
   )
 }

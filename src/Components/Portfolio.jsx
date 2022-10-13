@@ -23,7 +23,7 @@ const Portfolio = () => {
         </div>
         <div className='port_cont--slide lg:pt-16 pt-8'>
           <Portfolio_Component />
-          <div className='justify-center pt-6 space-x-6 flex flex-row'>
+          <div className='justify-center pt-10 space-x-6 flex flex-row'>
             <img src={left} alt="" className='lg:hidden' />
             <img src={right} alt="" className='lg:hidden'/>
           </div> 

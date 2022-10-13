@@ -31,7 +31,7 @@ const Footer = () => {
         <img src={logoMob} alt="Logo" className='lg:min-w-[305px]' />
         <div className='flex space-x-12 items-center'>
         <ul className='stroke flex uppercase justify-center space-x-4   font-bold text-sm lg:text-xl'>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skill</a></li>
             <li><a href="#portfolio">Projects</a></li>

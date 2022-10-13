@@ -46,7 +46,7 @@ const About = () => {
       
         <img src={lighting} className = 'lg:top-[260%] lg:left-[80%] md:left-[52%] md:top-[71%] lg:min-w-[232px] lg:min-h-[371px] max-w-[72px] h-[116px] absolute z-50 right-14' />
     
-      <img src={check} alt="" className=' relative w-full h-full top-8 overflow-hidden lg:top-32' />
+      <img src={check} alt="" className=' relative w-full h-full top-7 overflow-hidden lg:top-28' />
     </div>
   )
 }

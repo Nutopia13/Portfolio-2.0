@@ -1,10 +1,12 @@
 import React from 'react'
+import spiral_contact from '../assets/Spiral_Contact.svg'
 
 const Contact = () => {
 
 
   return (
-    <div className='pt-8 bg-blue1'>
+    <div className='pt-8 lg:pt-16  bg-blue1 overflow-hidden relative'>
+      <img src={spiral_contact} alt="" className='hidden lg:block absolute z-10 right-0' />
       <div className='m-auto lg:px-0 px-5 max-w-[340px] lg:max-w-[1200px]'>
        
         <h3 className='contact_title max-w-[1000px] text-bright_yellow'> Would you like to discuss <span className='text-white'>the project ?</span></h3>
@@ -18,7 +20,7 @@ const Contact = () => {
           <input required className='Contact_Input' name='email' type="email" />
         </div>
 
-        <div className='third_input'>
+        <div className='third_input relative z-20'>
           <textarea required className='Contact_Input' name="description" type='text'></textarea>
         </div>
 
@@ -29,7 +31,7 @@ const Contact = () => {
       </div>
 
       <h3 className='contact_foot lg:hidden lg:mt-20 mt-10 bg-pink text-white py-2 font-bold text-center uppercase'>- Let's Work Together - </h3>
-      <h3 className='contact_foot--lg text-white py-4 font-bold bg-pink text-center uppercase mt-20 hidden lg:block'>Let's Work Together - Let's Work Together - Let's Work Together </h3>
+      <h3 className='contact_foot--lg text-white py-4 relative z-20 font-bold bg-pink text-center uppercase mt-20 hidden lg:block'>Let's Work Together - Let's Work Together - Let's Work Together </h3>
 
      
     </div>
