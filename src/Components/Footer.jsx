@@ -28,7 +28,7 @@ const Footer = () => {
 
 
       <div className=' hidden lg:grid md:block grid-cols-2 items-center'>
-        <img src={logoMob} alt="Logo" className='lg:min-w-[305px]' />
+        <img src={logoMob} loading="lazy"  alt="Logo" className='lg:min-w-[305px]' />
         <div className='flex space-x-12 items-center'>
         <ul className='stroke flex uppercase justify-center space-x-4   font-bold text-sm lg:text-xl'>
             <li><a href="#hero">Home</a></li>

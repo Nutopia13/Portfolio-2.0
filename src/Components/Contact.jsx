@@ -6,7 +6,7 @@ const Contact = () => {
 
   return (
     <div className='pt-8 lg:pt-16  bg-blue1 overflow-hidden relative'>
-      <img src={spiral_contact} alt="" className='hidden lg:block absolute z-10 right-0' />
+      <img src={spiral_contact} loading="lazy" alt="" className='hidden lg:block absolute z-10 right-0' />
       <div className='m-auto lg:px-0 px-5 max-w-[340px] lg:max-w-[1200px]'>
        
         <h3 className='contact_title max-w-[1000px] text-bright_yellow'> Would you like to discuss <span className='text-white'>the project ?</span></h3>
