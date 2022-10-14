@@ -389,15 +389,15 @@ transform: rotate(-2deg);
 /* SwiperJS Navigation Customization */
 
 .swiper-button-next{
-  position: absolute;
-  top: 90%;
-  right: 39%;
+  position: absolute !important;
+  top: 90% !important;
+  right: 39% !important ;
 }
 
 .swiper-button-prev{
-  position: absolute;
-  top: 90%;
-  left: 39%;
+  position: absolute !important;
+  top: 90% !important;
+  left: 39% !important;
 }
 
 .swiper-button-next::after{
