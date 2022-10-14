@@ -7,15 +7,15 @@ import { TailwindIcon } from './Icons/Tailwind_Icon'
 const Portfolio_Component = (props) => {
   return (
     <div className='flex flex-col flex-wrap'>
-    <div className='lg:ml-28 md:ml-6 lg:min-w-[478px] min-w-[338px] pb-8 pl-5 flex flex-wrap flex-col'>
-      <div className='img_cont max-w-[325px] max-h-[290px] lg:max-w-[460px] lg:max-h-[460px]'>
+    <div className='min-w-[338px] pb-8 pl-5 flex flex-wrap flex-col'>
+      <div className='img_cont max-w-[325px] max-h-[290px]'>
         <img src={example} alt="" className='w-full' />
       </div>
-      <div className='port_text--cont md:max-w-[300px] lg:max-w-[400px] max-w-[340px] font-oswald lg:pt-10 pt-6 text-dark_blue text-left '>
-        <h3 className='port_card--title lg:text-4xl underline'><a href="">{props.title}</a></h3>
-        <p className='pt-3 lg:5 text-base lg:text-2xl opacity-70'>{props.description}</p>
+      <div className='port_text--cont max-w-[340px] font-oswald pt-6 text-dark_blue text-left '>
+        <h3 className='port_card--title underline'><a href="">{props.title}</a></h3>
+        <p className='pt-3  text-base  opacity-70'>{props.description}</p>
         <div className='flex  space-x-3 pt-5 items-center'>
-        <p className=' font-bold text-lg lg:text-2xl items-center'>Tech Stack:</p>
+        <p className=' font-bold text-lg items-center'>Tech Stack:</p>
         <div className='flex space-x-1'>
           <HtmlIcon />
           <ReactIcon /> 
