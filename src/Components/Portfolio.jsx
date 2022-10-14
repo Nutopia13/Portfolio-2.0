@@ -33,7 +33,7 @@ const Portfolio = () => {
         {cards}
         </div>
         <Swiper
-        className='mySwiper m-auto min-h-[550px] md:hidden lg:hidden port_cont--slide flex max-w-[350px] md:max-w-[750px] lg:max-w-full flex-row  lg:pt-16 pt-16'
+        className='mySwiper m-auto min-h-[550px] md:hidden lg:hidden port_cont--slide flex max-w-[350px] md:max-w-[750px] lg:max-w-full flex-row  lg:pt-16 mt-16'
         slidesPerView={1}
         spaceBetween={30}
         loop={true}

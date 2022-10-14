@@ -401,12 +401,12 @@ transform: rotate(-2deg);
 }
 
 .swiper-button-next::after{
-  content: url('./assets/RightArrow.svg');
+  content: url('');
 }
 
 
 .swiper-button-prev::after{
-  content: url('./assets/LeftArrow.svg');
+  content: url('');
 }
 
 

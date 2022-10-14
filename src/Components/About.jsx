@@ -10,7 +10,7 @@ const About = () => {
   
   return (
     <div className='w-full about_inner bg-[120%] bg-center bg-pink'>
-      <div className=' flex   flex-wrap md:ml-10 md:space-x-10 md:justify-around lg:max-w-[1500px] md:max-w-[700px] items-center max-w-[370px] justify-center'>
+      <div className=' flex  flex-wrap md:ml-10 md:space-x-10 md:justify-around lg:max-w-[1500px] md:max-w-[700px] items-center max-w-[370px] justify-center'>
         <motion.img 
         initial={{
           x: -200,
