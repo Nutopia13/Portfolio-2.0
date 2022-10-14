@@ -20,7 +20,7 @@ function App() {
           <Hero />
         </section>
         <section   id='about' className ='about w-full'>
-          <About />
+          <About  />
         </section>
         <section id='skills'>
           <Skills className='skills w-full flex justify-center items-center' />

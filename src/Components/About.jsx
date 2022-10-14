@@ -9,8 +9,8 @@ import lighting from '../assets/Full_Lighting.svg'
 const About = () => {
   
   return (
-    <div className='w-full about_inner bg-[120%] bg-center bg-pink'>
-      <div className=' flex  flex-wrap md:ml-10 md:space-x-10 md:justify-around lg:max-w-[1500px] md:max-w-[700px] items-center max-w-[370px] justify-center'>
+    <div className='mx-auto max-h-[1150px] about_inner bg-[120%] bg-center bg-pink'>
+      <div className=' flex flex-wrap md:ml-10 md:space-x-10 md:justify-around lg:max-w-[1500px] md:max-w-[700px] items-center max-w-[370px] justify-center'>
         <motion.img 
         initial={{
           x: -200,
@@ -28,7 +28,7 @@ const About = () => {
           
           <h3 className='about_title lg:text-[80px] font-oswald text-3xl font-bold text-white'>About Me</h3>
           <div className='lg:pt-8 pb-8'>
-        <img loading="lazy" src={lighting} className = 'lg:left-[52%] lg:top-[162%] md:left-[52%]  lg:min-w-[112px] lg:min-h-[179px] max-w-[60px] h-[97px] absolute z-50 left-1' />
+        <img loading="lazy" src={lighting} className = 'lg:left-[52%] lg:top-[162%] md:left-[50%]  lg:min-w-[112px] lg:min-h-[179px] max-w-[60px] h-[97px] absolute z-50 left-1' />
             <p className='text-dark_blue mt-[40px] top-4 left-5 border-2 relative z-20 border-dark_blue font-oswald text-2xl bg-bright_yellow uppercase min-h-[51px] tracking-wide flex items-center w-[148px] font-bold lg:text-4xl pl-4'>My Bio</p>
             <div className='about_text lg:max-w-[705px]  max-w-[321px] bg-white border-dark_blue border-4'>
               <p className=' about_p  lg:text-2xl lg:max-w-[580px] max-w-[300px] text-base pt-[36px] px-[20px] lg:px-11 text-left font-oswald '>
@@ -44,9 +44,9 @@ const About = () => {
       </div>
       </div>
       
-        <img loading="lazy" src={lighting} className = 'lg:top-[260%] lg:left-[80%] lg:min-w-[232px] lg:min-h-[371px] max-w-[72px] h-[116px] absolute z-50 right-14' />
+        <img loading="lazy" src={lighting} className =  'left-[70%] lg:top-48 top-15 md:top-24 md:left-[80%] lg:min-w-[232px] lg:min-h-[371px] max-w-[72px] h-[116px] relative z-50 right-14' />
     
-      <img loading="lazy" src={check} alt="" className=' relative w-full h-full top-7 overflow-hidden lg:top-28' />
+      <img loading="lazy" src={check} alt="" className=' relative w-full h-full md:top-2 bottom-24 overflow-hidden' />
     </div>
   )
 }

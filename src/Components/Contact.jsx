@@ -12,11 +12,11 @@ const Contact = () => {
         <h3 className='contact_title max-w-[1000px]  text-bright_yellow'> Would you like to discuss <span className='text-white'>the project ?</span></h3>
 
         <form name="contact" method="POST" data-netlify="true" className='flex mt-14 flex-col space-y-5 w-fit'>
-        <div className='first_input'>
+        <div className='first_input relative z-20'>
           <input required className='Contact_Input' name='fullName' type="text" />
         </div>
 
-        <div className='second_input'>
+        <div className='second_input relative z-20'>
           <input required className='Contact_Input' name='email' type="email" />
         </div>
 
