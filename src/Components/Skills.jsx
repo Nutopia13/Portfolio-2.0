@@ -19,9 +19,9 @@ const Skills = () => {
   return (
     <div className='bg-blue1 skills  lg:pt-72 pt-16 lg:pb-36 pb-14'>
       <div className='text-white text-center lg:text-left mt-10'>
-        <h2 className='lg:ml-32 skills_title font-bold font-oswald lg:text-[90px] text-4xl'>My <span className='text-bright_yellow'>Skills</span></h2>
+        <h2 className='lg:ml-32 skills_title font-bold font-oswald md:text-6xl lg:text-[90px] text-4xl'>My <span className='text-bright_yellow'>Skills</span></h2>
       </div>
-      <div className='flex justify-center flex-wrap items-center lg:space-x-12  space-x-3'>
+      <div className='flex justify-center flex-wrap items-center lg:space-x-12 md:space-x-7 space-x-3'>
         {skill_card}
       </div>
       <img src={check} alt="" className=' relative w-full h-full top-20 overflow-hidden lg:top-40' />

@@ -19,6 +19,7 @@ const Navbar = () => {
         x: 0,
         opacity: 1,
       }}
+      whileTap = {{border: 1}}
       whileInView={{opacity: 1}}
       transition={{type:'spring', duration: 0.7, bounce: 0.7}}
       viewport = {{ones:true}}

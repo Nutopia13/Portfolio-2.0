@@ -177,7 +177,7 @@ transform: rotate(-2deg);
 .clip_tab{
     position: absolute;
     z-index: 1;
-    top: 28%;
+    top: 50%;
     clip-path: polygon(100% 41%, 100% 100%, 0 100%, 0 55%);
     background: #F1D624;
     min-width: 100vw;

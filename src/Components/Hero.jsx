@@ -16,7 +16,7 @@ const Hero = () => {
       </div>
       <div>
         {/* Hello_Text */}
-        <div className='lg:absolute lg:top-40 md:absolute md:bottom-[65%] ml-4 md:ml-[60px] lg:ml-[164px] bottom-48 md:max-w-[473px] lg:max-w-[746px] max-w-[347px] text_cont--hero'>
+        <div className='lg:absolute lg:top-40 md:absolute md:bottom-[45%] ml-4 md:ml-[60px] lg:ml-[164px] bottom-48 md:max-w-[473px] lg:max-w-[746px] max-w-[347px] text_cont--hero'>
           <div className='hello_cont md:h-[72px] h-[60px] lg:h-[112px] w-[149px] md:w-[179px] lg:min-w-[273px] lg:text-[64px] md:text-4xl text-2xl'>
            <h1 className='hello_text'>Hello</h1>
           </div>
