@@ -2,7 +2,6 @@ import React from 'react'
 import MyResume from '../Components/MyResume'
 import TextScroller from './RunningText'
 import spiral from '../assets/Spiral.svg'
-import spiral_mob from '../assets/Spiral_Mob.svg'
 import RunningText_Desk from './RunningText_Desk'
 
 
