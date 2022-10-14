@@ -38,5 +38,40 @@ export default {
 ],
 
 'portfolio':[
+    {
+        id: 1,
+        image: '',
+        title: 'Ugi Stelmokaitis',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+
+    {
+        id: 2,
+        image: '',
+        title: 'Ugi Stelmokaitis',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+
+    {
+        id: 3,
+        image: '',
+        title: 'Ugi Stelmokaitis',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+
+    {
+        id: 4,
+        image: '',
+        title: 'Ugi Stelmokaitis',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+
+    {
+        id: 5,
+        image: '',
+        title: 'Ugi Stelmokaitis',
+        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    },
+
 
 ]}

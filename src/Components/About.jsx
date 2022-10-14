@@ -1,5 +1,5 @@
 import React from 'react'
-import about_pic from '../assets/AboutPic_Mob.svg'
+import about_pic from '../assets/About_Me.svg'
 import { motion } from "framer-motion"
 import Lighting from './Lighting'
 import check from '../assets/Checkbox_Mob.svg'

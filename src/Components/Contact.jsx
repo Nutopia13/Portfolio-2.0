@@ -30,7 +30,7 @@ const Contact = () => {
       </form>
       </div>
 
-      <h3 className='contact_foot lg:hidden md:hidden lg:mt-20 mt-10 bg-pink text-white py-2 font-bold text-center uppercase'>- Let's Work Together - </h3>
+      <h3 className='contact_foot lg:hidden md:hidden mt-16 bg-pink text-white py-2 font-bold text-center uppercase'>- Let's Work Together - </h3>
       <h3 className='contact_foot--lg text-white py-4 relative z-20 font-bold bg-pink text-center uppercase mt-40 hidden md:hidden lg:block'>Let's Work Together - Let's Work Together - Let's Work Together </h3>
       <h3 className='contact_foot--md lg:hidden text-white py-2 relative z-20 font-bold bg-pink text-center uppercase mt-28 hidden md:block'>Let's Work Together - Let's Work Together - Let's Work Together </h3>
 

@@ -13,7 +13,7 @@ html{
 
 ::-webkit-scrollbar {
   width: 5px;
-  height: 0px;
+  height: 3px;
 }
 
 ::-webkit-scrollbar-track {
@@ -347,9 +347,13 @@ text-align: left;
   }
 }
 
-.img_cont{
-  border: 4px solid #06283D;
-transform: rotate(-2deg);
+.port_cont--slide{
+  scroll-snap-type: x mandatory;
+
+}
+
+.port_text--cont{
+  scroll-snap-align: center;
 }
 
 .port_card--title{
@@ -366,6 +370,37 @@ text-transform: uppercase;
   content: url('./assets/arrowLink.svg');
   padding-left: 24px;
 }
+
+
+
+.img_cont{
+  border: 4px solid #06283D;
+transform: rotate(-2deg);
+}
+
+/* SwiperJS Navigation Customization */
+
+.swiper-button-next{
+  position: absolute;
+  top: 95%;
+  right: 39%;
+}
+
+.swiper-button-prev{
+  position: absolute;
+  top: 95%;
+  left: 39%;
+}
+
+.swiper-button-next::after{
+  content: url('./assets/RightArrow.svg');
+}
+
+
+.swiper-button-prev::after{
+  content: url('./assets/LeftArrow.svg');
+}
+
 
 
 
