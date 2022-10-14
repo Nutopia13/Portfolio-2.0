@@ -4,6 +4,7 @@ import data from '../data'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import '../index.css'
 import { Navigation } from "swiper";
 import Portfolio_Components from './Portfolio_Compononets'
 
