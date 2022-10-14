@@ -23,7 +23,7 @@ const Portfolio = () => {
         ) 
     })
   return (
-    <div className='bg-hero-pattern bg-center md:pb-32 pb-8'>
+    <div className='bg-center md:pb-32 pb-8'>
       <div className='lg:pt-32 pt-16'>
         <div>
           <h2 className='m-auto md:text-left md:max-w-[436px] md:ml-12 lg:ml-32 lg:max-w-[765px] max-w-[333px] portfolio_title'>Why people love <br/>

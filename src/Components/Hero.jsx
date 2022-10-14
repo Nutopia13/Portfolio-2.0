@@ -1,6 +1,5 @@
 import React from 'react'
 import MyResume from '../Components/MyResume'
-import hero from '../assets/Hero_Spiral.png'
 import TextScroller from './RunningText'
 import spiral from '../assets/Spiral.svg'
 import RunningText_Desk from './RunningText_Desk'
@@ -9,7 +8,7 @@ import RunningText_Desk from './RunningText_Desk'
 const Hero = () => {
 
   return (
-    <div className='w-full md:max-h-[560px] lg:min-h-[900px] pt-16 bg-hero-pattern md:bg-contain md:min-w-[768px] lg:bg-contain max-h-[700px] bg-center'>
+    <div className='w-full md:max-h-[560px] lg:min-h-[900px] pt-16 md:bg-contain md:min-w-[768px] lg:bg-contain max-h-[700px] bg-center'>
       <img src={spiral} alt="Hero Img" className='lg:relative hidden max-w-[70%] lg:z-50 lg:block top-[15%] bottom-20 left-[50%]' />
       <div className='w-[768px] h-[550px] hidden lg:hidden md:block overflow-hidden bottom-16 left-[40%] relative'>
         <img src={spiral} alt="Hero Img" className=' md:max-w-[800px] relative z-20 hidden  md:block lg:hidden ' />
@@ -33,11 +32,6 @@ const Hero = () => {
         </div>
         
         <MyResume />
-
-        {/* <div className='max-w-[375px] overflow-hidden'>
-          <div className='clip_mob max-w-[375px] md:hidden lg:hidden absolute bottom-10 z-10'>
-        </div>
-        </div> */}
   
         <div className='clip_desk hidden lg:block'>  
         </div>

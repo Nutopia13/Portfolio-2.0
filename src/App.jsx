@@ -25,8 +25,8 @@ function App() {
         <section id='skills'>
           <Skills className='skills w-full flex justify-center items-center' />
         </section>
-        <section id='portfolio'>
-          <Portfolio  className = 'portfolio w-full flex justify-center items-center'/>
+        <section id='portfolio' className="portfolio">
+          <Portfolio  className = 'w-full flex justify-center items-center'/>
         </section>
         <section id='contact' >
           <Contact className = 'contact w-full flex justify-center items-center' />

@@ -116,6 +116,10 @@ transform: rotate(-2.82deg);
 
 /* Hero Text Styling */
 
+.hero{
+  background-image: url(./assets/SquareBg.png);
+}
+
 .hello_cont{
 box-sizing: border-box;
 display: flex;
@@ -321,7 +325,11 @@ text-shadow: -4px 4px 0px #06283D;
 }
 
 
-/* Portfolio Header */
+/* Portfolio */
+
+.portfolio{
+  background-image: url('./assets/SquareBg.png');
+}
 
 .portfolio_title{
 color: #FFFFFF;
