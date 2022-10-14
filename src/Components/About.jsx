@@ -1,7 +1,6 @@
 import React from 'react'
 import about_pic from '../assets/About_Me.svg'
 import { motion } from "framer-motion"
-import Lighting from './Lighting'
 import check from '../assets/Checkbox_Mob.svg'
 import lighting from '../assets/Full_Lighting.svg'
 
@@ -10,7 +9,7 @@ const About = () => {
   
   return (
     <div className='mx-auto max-h-[1150px] about_inner bg-[120%] bg-center bg-pink'>
-      <div className=' flex flex-wrap md:ml-10 md:space-x-10 md:justify-around lg:max-w-[1500px] md:max-w-[700px] items-center max-w-[370px] justify-center'>
+      <div className=' flex mx-auto flex-wrap md:ml-10 md:space-x-10 md:justify-around lg:max-w-[1500px] md:max-w-[700px] items-center max-w-[370px] justify-center'>
         <motion.img 
         initial={{
           x: -200,
