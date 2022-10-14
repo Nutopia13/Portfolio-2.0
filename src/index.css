@@ -390,23 +390,23 @@ transform: rotate(-2deg);
 
 .swiper-button-next{
   position: absolute;
-  top: 95%;
+  top: 90%;
   right: 39%;
 }
 
 .swiper-button-prev{
   position: absolute;
-  top: 95%;
+  top: 90%;
   left: 39%;
 }
 
 .swiper-button-next::after{
-  content: url('/src/assets/RightArrow.svg');
+  content: url('/src/assets/RightArrow.svg') !important;
 }
 
 
 .swiper-button-prev::after{
-  content: url('/src/assets/LeftArrow.svg');
+  content: url('/src/assets/LeftArrow.svg') !important;
 }
 
 
