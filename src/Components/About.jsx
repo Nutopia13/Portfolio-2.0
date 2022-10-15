@@ -28,7 +28,7 @@ const About = () => {
           
           <h3 className='about_title lg:text-[80px] font-oswald text-3xl font-bold text-white'>About Me</h3>
           <div className='lg:pt-8 pb-8'>
-        <img loading="lazy" src={lighting} className = 'lg:left-[52%] lg:top-[162%] md:left-[50%]  lg:min-w-[112px] lg:min-h-[179px] max-w-[60px] h-[97px] absolute z-50 left-4' />
+            <img loading="lazy" src={lighting} className = 'lg:left-[52%] lg:top-[162%] md:left-[50%]  lg:min-w-[112px] lg:min-h-[179px] max-w-[60px] h-[97px] absolute z-50 left-4' />
             <p className='text-dark_blue mt-[40px] top-4 left-5 border-2 relative z-20 border-dark_blue font-oswald text-2xl bg-bright_yellow uppercase min-h-[51px] tracking-wide flex items-center w-[148px] font-bold lg:text-4xl pl-4'>My Bio</p>
             <div className='about_text lg:max-w-[705px]  max-w-[321px] bg-white border-dark_blue border-4'>
               <p className=' about_p  lg:text-2xl lg:max-w-[580px] max-w-[300px] text-base pt-[36px] px-[20px] lg:px-11 text-left font-oswald '>
@@ -39,7 +39,7 @@ const About = () => {
           <motion.button
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.9 }}>
-          <button className='lg:left-14 lg:bottom-14 lg:text-[30px] text-lg font-oswald text-dark_blue font-bold btn2 py-2 px-5 relative bottom-14 left-7 lg:px-10 hover:shadow-none ease-in  duration-75 lg:py-5 uppercase bg-azra'>Resume</button>
+          <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><button className='lg:left-14 lg:bottom-14 lg:text-[30px] text-lg font-oswald text-dark_blue font-bold btn2 py-2 px-5 relative bottom-14 left-7 lg:px-10 hover:shadow-none ease-in  duration-75 lg:py-5 uppercase bg-azra'>Resume</button></a>
           </motion.button>
       </div>
       </div>
