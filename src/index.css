@@ -436,26 +436,10 @@ line-height: 108px
 }
 
 
-.first_input label{
+
+label{
   font-family: 'Oswald';
   text-transform: uppercase;
-  display: flex;
-  letter-spacing: 2px;
-  font-size: 14px;
-  align-items: center;
-  padding: 10px;
-  background-color: white;
-  font-weight: bold;
-  max-width: 126px;
-  border: 2px solid #06283D;
-  position: relative;
-  top: 8px;
-  left: 8px;
-}
-.second_input label{
-  font-family: 'Oswald';
-  text-transform: uppercase;
-  content: 'Email';
   display: flex;
   letter-spacing: 2px;
   font-size: 14px;
@@ -472,21 +456,7 @@ line-height: 108px
 
 
 .third_input label{
-  font-family: 'Oswald';
-  text-transform: uppercase;
-  content: 'describe your project';
-  display: flex;
-  letter-spacing: 2px;
-  font-size: 14px;
-  align-items: center;
-  padding: 10px;
-  background-color: white;
-  font-weight: bold;
-  border: 2px solid #06283D;
-  position: relative;
   max-width: 220px;
-  top: 8px;
-  left: 8px;
 }
 
 @media only screen and (min-width: 1200px){
