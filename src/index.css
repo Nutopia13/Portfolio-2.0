@@ -26,8 +26,7 @@ html{
   border-radius: 10px;
 }
 
-input:valid{
-}
+
 
 
 /* Custom Button */
@@ -457,7 +456,11 @@ line-height: 108px
 }
 
 .Contact_Input{
+
   @apply outline-none duration-300 lg:border-4 border-2 border-dark_blue lg:px-6 px-4 lg:py-5 py-2 lg:w-[582px] w-[300px] text-dark_blue placeholder-dark_blue transition-all focus:border-bright_yellow
+}
+.Contact_Input:valid{
+  @apply lg:border-4 border-[#13CE66] border-2 rounded-sm
 }
 
 .first_input::before{
