@@ -93,17 +93,7 @@ transform: rotate(-2.82deg);
 }
 
 .pop-list li:nth-child(2){
-  padding-top: 0px !important;
-}
-
-@media only screen and (min-width: 1200px) {
-  .pop-list li{
-    padding-top: 0px;
-  }
-  
-  .pop-list li:nth-child(2){
-    padding-top: 0px !important;
-  }
+  padding-top: 30px !important;
 }
 
 @media only screen and (min-width: 767px) {
@@ -111,10 +101,8 @@ transform: rotate(-2.82deg);
     padding-top: 0px;
   }
   
-  .pop-list li:nth-child(2){
-    padding-top: 0px !important;
-  }
 }
+
 
 /* Hero Text Styling */
 
@@ -398,13 +386,13 @@ transform: rotate(-2deg);
 .swiper-button-next{
   position: absolute !important;
   top: 90% !important;
-  right: 39% !important ;
+  right: 37% !important ;
 }
 
 .swiper-button-prev{
   position: absolute !important;
   top: 90% !important;
-  left: 39% !important;
+  left: 37% !important;
 }
 
 .swiper-button-next::after{
@@ -414,30 +402,6 @@ transform: rotate(-2deg);
 
 .swiper-button-prev::after{
   content: url('/src/assets/LeftArrow.svg') !important;
-}
-
-circle {
-  stroke-dashoffset: 0;
-  stroke-width: 15%;
-  fill: #F1D624;
-}
-
-.circle_bg{
-  stroke: #F1D624 ;
-}
-
-#progress .indicator {
-  stroke: #FF577F;
-}
-
-#progress {
-  transform: rotate(-90deg);
-}
-
-.progress_circle{
-  position: relative;
-  left: 30%;
-  bottom: 10%;
 }
 
 
