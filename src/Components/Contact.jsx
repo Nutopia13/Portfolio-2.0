@@ -12,7 +12,8 @@ const Contact = () => {
        
         <h3 className='contact_title max-w-[1000px]  text-bright_yellow'> Would you like to discuss <span className='text-white'>the project ?</span></h3>
 
-        <form name="contact" data-netlify-recaptcha="true" netlify action='POST' className='flex mt-14 flex-col space-y-5 w-fit'>
+        <form name="contact" action="https://api.web3forms.com/submit" method="POST" className='flex mt-14 flex-col space-y-5 w-fit'>
+        <input type="hidden" name="access_key" value="1564fb77-bdc9-44e7-a14d-7f30f86df76b" />
           <div className='flex flex-wrap gap-4 md:gap-8'>
         <div className='first_input relative z-20'>
           <label for = 'name'>Full Name</label>
