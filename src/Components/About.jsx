@@ -43,7 +43,7 @@ const About = () => {
       </div>
       </div>
       
-        <img loading="lazy" src={lighting} className =  'left-[70%] lg:top-48 top-15 md:top-24 md:left-[80%] lg:min-w-[232px] lg:min-h-[371px] max-w-[72px] h-[116px] relative z-50 right-14' />
+        <img loading="lazy" src={lighting} className =  'left-3/4 lg:top-48 top-15 md:top-24 lg:min-w-[232px] lg:min-h-[371px] max-w-[72px] h-[116px] relative z-50 right-14' />
     
       <img loading="lazy" src={check} alt="" className=' relative w-full h-full md:top-2 lg:-top-28 bottom-24 overflow-hidden' />
     </div>

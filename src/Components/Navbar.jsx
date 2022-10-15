@@ -44,7 +44,7 @@ const Navbar = () => {
         <motion.button
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.9 }}>
-        <button className='btn1 hidden hover:shadow-none ease-in  duration-75  md:block lg:block font-bold text-sm lg:text-lg bg-bright_yellow py-2.5 px-6 lg:py-4 lg:px-9'>Resume</button>
+        <button className='btn1 hidden hover:shadow-none ease-in  duration-75  md:block lg:block font-bold text-sm lg:text-lg bg-bright_yellow py-2.5 px-6 lg:py-4 lg:px-9'><a target='_blank' href="public\Nechytailo_Vladyslav_CV.pdf">Resume</a></button>
         </motion.button>
       </motion.nav>
     </div>
