@@ -30,7 +30,7 @@ const Skills = () => {
       }}
 
       whileInView={{opacity: 1, x:0}}
-      transition={{type:'spring', duration: 0.7, bounce: 0.7}}
+      transition={{type:'spring', duration: 1.5, bounce: 0.7}}
       viewport = {{ones:true}}
 
 
