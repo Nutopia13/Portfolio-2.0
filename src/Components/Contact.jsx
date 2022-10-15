@@ -12,12 +12,14 @@ const Contact = () => {
         <h3 className='contact_title max-w-[1000px]  text-bright_yellow'> Would you like to discuss <span className='text-white'>the project ?</span></h3>
 
         <form name="contact" action='POST' className='flex mt-14 flex-col space-y-5 w-fit'>
+          <div className='flex flex-wrap gap-8'>
         <div className='first_input relative z-20'>
           <input required className='Contact_Input' name='fullName' type="text" />
         </div>
 
         <div className='second_input relative z-20'>
           <input required className='Contact_Input' name='email' type="email" />
+        </div>
         </div>
 
         <div className='third_input relative z-20'>
@@ -34,7 +36,7 @@ const Contact = () => {
       </div>
 
       <h3 className='contact_foot lg:hidden md:hidden mt-16 bg-pink text-white py-2 font-bold text-center uppercase'>- Let's Work Together - </h3>
-      <h3 className='contact_foot--lg text-white py-4 relative z-20 font-bold bg-pink text-center uppercase mt-40 hidden md:hidden lg:block'>Let's Work Together - Let's Work Together - Let's Work Together </h3>
+      <h3 className='contact_foot--lg text-white py-4 relative z-20 font-bold bg-pink text-center uppercase mt-16 hidden md:hidden lg:block'>Let's Work Together - Let's Work Together - Let's Work Together </h3>
       <h3 className='contact_foot--md lg:hidden text-white py-2 relative z-20 font-bold bg-pink text-center uppercase mt-28 hidden md:block'>Let's Work Together - Let's Work Together - Let's Work Together </h3>
 
      

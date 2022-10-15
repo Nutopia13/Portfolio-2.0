@@ -270,6 +270,14 @@ box-shadow: -18px 18px 0px #06283D;
   background-repeat: repeat;
 }
 
+/* .my_bio::before{
+  position: absolute;
+  content: url('./assets/Full_Lighting.svg');
+  transform: scale(.5);
+  z-index: 50;
+  right: 75%;
+}  */
+
 .about_title{
     margin-top: 21px;
     text-transform: uppercase;
@@ -440,8 +448,8 @@ circle {
   font-family: 'Oswald';
 font-style: normal;
 font-weight: 700;
-font-size: 48px;
-line-height: 60px;
+font-size: 40px;
+line-height: 45px;
 
 letter-spacing: 4px;
 text-transform: uppercase;
