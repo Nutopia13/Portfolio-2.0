@@ -1,5 +1,6 @@
 import React from 'react'
 import spiral_contact from '../assets/Spiral_Contact.svg'
+import email from '../assets/email.svg'
 
 const Contact = () => {
 
@@ -14,16 +15,19 @@ const Contact = () => {
         <form name="contact" action='POST' className='flex mt-14 flex-col space-y-5 w-fit'>
           <div className='flex flex-wrap gap-4 md:gap-8'>
         <div className='first_input relative z-20'>
-          <input required className='Contact_Input' name='fullName' type="text" />
+          <label for = 'name'>Full Name</label>
+          <input required className='Contact_Input' name='fullName' id='name' type="text" />
         </div>
 
         <div className='second_input relative z-20'>
-          <input required className='Contact_Input' name='email' type="email" />
+          <label className='flex items-center gap-4' for='email'>Email <img className='max-w-[25px] lg:max-w-[30px] relative' src={email} alt="" /></label>
+          <input required className='Contact_Input' id='email' name='email' type="email" />
         </div>
         </div>
 
         <div className='third_input relative z-20'>
-          <textarea required className='Contact_Input' name="description" type='text'></textarea>
+          <label for='description'>Describe your project</label>
+          <textarea required  id='description' className='Contact_Input' name="description" type='text'></textarea>
         </div>
         <div>
           <div data-netlify-recaptcha = 'true'></div>
