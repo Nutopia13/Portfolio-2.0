@@ -16,8 +16,9 @@ const About = () => {
           opacity: 0,
   
          }}
+
   
-        whileInView={{opacity: 1, x: 0}}
+        whileInView={{opacity: 1, x:0}}
         transition={{type:'spring', duration: 0.7, bounce: 0.5}}
         viewport = {{ones:true}}
         src={about_pic} alt="" className='lg:w-[500px] pt-10 lg:pt-32  md:w-[300px]'/>
