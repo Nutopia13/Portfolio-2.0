@@ -12,7 +12,7 @@ const Contact = () => {
        
         <h3 className='contact_title max-w-[1000px]  text-bright_yellow'> Would you like to discuss <span className='text-white'>the project ?</span></h3>
 
-        <form name="contact" action='POST' className='flex mt-14 flex-col space-y-5 w-fit'>
+        <form name="contact" data-netlify-recaptcha="true" netlify className='flex mt-14 flex-col space-y-5 w-fit'>
           <div className='flex flex-wrap gap-4 md:gap-8'>
         <div className='first_input relative z-20'>
           <label for = 'name'>Full Name</label>
@@ -29,9 +29,7 @@ const Contact = () => {
           <label for='description'>Describe your project</label>
           <textarea required  id='description' className='Contact_Input' name="description" type='text'></textarea>
         </div>
-        <div>
-          <div data-netlify-recaptcha = 'true'></div>
-        </div>
+        <div data-netlify-recaptcha="true"></div>
 
     
         <button type='submit' className='btn3 relative z-20 hover:shadow-none ease-in  lg:max-w-[220px] max-w-[170px] duration-75  uppercase font-extrabold text-sm lg:text-lg bg-bright_yellow py-2.5 px-6 lg:py-4 lg:px-9'>Submit</button>
