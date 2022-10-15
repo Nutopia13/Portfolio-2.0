@@ -12,7 +12,7 @@ const Contact = () => {
        
         <h3 className='contact_title max-w-[1000px]  text-bright_yellow'> Would you like to discuss <span className='text-white'>the project ?</span></h3>
 
-        <form name="contact" data-netlify-recaptcha="true" netlify className='flex mt-14 flex-col space-y-5 w-fit'>
+        <form name="contact" data-netlify-recaptcha="true" netlify action='POST' className='flex mt-14 flex-col space-y-5 w-fit'>
           <div className='flex flex-wrap gap-4 md:gap-8'>
         <div className='first_input relative z-20'>
           <label for = 'name'>Full Name</label>
