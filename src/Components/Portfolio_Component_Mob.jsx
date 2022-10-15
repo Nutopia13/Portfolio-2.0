@@ -7,7 +7,7 @@ import { TailwindIcon } from './Icons/Tailwind_Icon'
 const Portfolio_Component = (props) => {
   return (
     <div className='flex flex-col flex-wrap'>
-    <div className='min-w-[338px] pb-8 pl-5 flex flex-wrap flex-col'>
+    <div className='m-auto min-w-[340px] pb-8 flex flex-wrap flex-col'>
       <div className='img_cont max-w-[325px] max-h-[290px]'>
         <img src={example} alt="" className='w-full' />
       </div>

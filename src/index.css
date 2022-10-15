@@ -409,6 +409,29 @@ transform: rotate(-2deg);
   content: url('/src/assets/LeftArrow.svg') !important;
 }
 
+circle {
+  stroke-dashoffset: 0;
+  stroke-width: 15%;
+  fill: #F1D624;
+}
+
+.circle_bg{
+  stroke: #F1D624 ;
+}
+
+#progress .indicator {
+  stroke: #FF577F;
+}
+
+#progress {
+  transform: rotate(-90deg);
+}
+
+.progress_circle{
+  position: relative;
+  left: 30%;
+  bottom: 10%;
+}
 
 
 

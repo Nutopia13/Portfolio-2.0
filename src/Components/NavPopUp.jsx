@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 const NavPopUp = (props) => {
   return (props.trigger) ? (
-    <div className='lg:hidden md:hidden popup fixed z-50 top-2'>
+    <div onClick = {() => props.setTrigger(false)} className='lg:hidden md:hidden popup fixed z-50 top-2'>
       <motion.div
 
        initial={{
