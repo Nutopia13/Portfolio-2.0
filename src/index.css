@@ -26,6 +26,10 @@ html{
   border-radius: 10px;
 }
 
+input:valid{
+  background-color: #6652e4;
+}
+
 
 /* Custom Button */
 

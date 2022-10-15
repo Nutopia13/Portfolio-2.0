@@ -24,28 +24,30 @@ const Navbar = () => {
       transition={{type:'spring', duration: 0.7, bounce: 0.7}}
       viewport = {{ones:true}}
 
-      className='md:gap-16 relative z-50 m-auto font-oswald lg:max-w-[1200px] md:max-w-[655px] max-w-[340px] min-h-[72px] justify-center lg:min-h-[112px] items-center flex lg:justify-between'>
+      className='md:gap-16 relative z-50 m-auto font-oswald lg:max-w-[1200px] md:max-w-[655px] max-w-[320px] min-h-[72px] justify-between lg:min-h-[112px] items-center flex lg:justify-between'>
       
         <img src={logoMob} alt="" className='lg:min-w-[305px]' />
-        <div className='md:hidden lg:hidden ml-[40%]'>
+        <div className='md:hidden lg:hidden'>
           <img onClick ={() => setbuttonPop(true)} src={menu} alt="Navigation Menu" />
         </div>
         <NavPopUp trigger={buttonPop} setTrigger = {setbuttonPop} />
         <div 
-        className='hidden md:block lg:block'>
+        className='hidden md:flex lg:flex  md:items-center gap-7'>
           <ul className='stroke flex lg:ml-64 justify-center gap-4 lg:gap-9 font-bold text-sm lg:text-xl'>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skill</a></li>
             <li><a href="#portfolio">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+           
           </ul>
-        </div>
-        <motion.button
+          <motion.button
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.9 }}>
        <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><button className='btn1 hidden hover:shadow-none ease-in  duration-75  md:block lg:block font-bold text-sm lg:text-lg bg-bright_yellow py-2.5 px-6 lg:py-4 lg:px-9'>Resume</button></a>
         </motion.button>
+        </div>
+        
       </motion.nav>
     </div>
   )

@@ -9,8 +9,8 @@ const MyResume = () => {
   return (
     <div>
     <div className='lg:max-w-[1220px] '>
-      <div className=' lg:ml-[100px] pl-[15px] mt-[30px] lg:mt-[73px] max-w-full  z-10 lg:max-w-[1200px]'>
-        <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><img src={arrow} alt="" className='z-30 relative  md:left-16 md:absolute md:top-full lg:absolute checkout lg:top-3/4 lg:mt-6 lg:left-32 max-w-[104px] lg:max-w-[200px] md:max-w-[91px]'/></a>
+      <div className=' pl-[15px] mt-[30px] lg:mt-[73px] max-w-full  z-10 lg:max-w-[1200px]'>
+        <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><img src={arrow} alt="" className='z-30 relative  md:left-16 md:absolute md:top-full lg:absolute checkout lg:top-3/4 lg:mt-6 lg:left-40 max-w-[104px] lg:max-w-[200px] md:max-w-[91px]'/></a>
         <img src={spiral} alt="" className='spiral lg:hidden md:hidden max-w-[594px] relative bottom-20 right-[14%] z-20'/>
       </div>
      

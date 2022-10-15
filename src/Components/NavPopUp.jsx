@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 const NavPopUp = (props) => {
   return (props.trigger) ? (
-    <div onClick = {() => props.setTrigger(false)} className='lg:hidden md:hidden popup fixed z-50 top-2'>
+    <div onClick = {() => props.setTrigger(false)} className='lg:hidden md:hidden popup flex justify-center fixed z-50 top-2'>
       <motion.div
 
        initial={{
@@ -32,7 +32,7 @@ const NavPopUp = (props) => {
             <li><a href="#skill">Skill</a></li>
             <li><a href="#portfolio">Project</a></li>
             <li className='pb-[42px]'><a href="#">Contact</a></li>
-            <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><button className='btn1 hover:shadow-none ease-in  duration-75  md:block lg:block font-bold text-sm lg:text-lg bg-bright_yellow py-2.5 px-6 lg:py-4 lg:px-9'>Resume</button></a>
+            <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><button className='btn1 hover:shadow-none ease-in  duration-75  md:block font-bold text-xl bg-bright_yellow py-3 px-8'>Resume</button></a>
             
         </ul>
         
