@@ -3,6 +3,7 @@ import MyResume from '../Components/MyResume'
 import TextScroller from './RunningText'
 import spiral from '../assets/Spiral.svg'
 import RunningText_Desk from './RunningText_Desk'
+import MovingComponent from 'react-moving-text'
 
 
 const Hero = () => {
@@ -13,6 +14,7 @@ const Hero = () => {
       <div className='w-[768px] h-[550px] hidden lg:hidden md:block overflow-hidden bottom-16 left-[40%] relative'>
         <img src={spiral} alt="Hero Img" className=' md:max-w-[800px] relative z-20 hidden  md:block lg:hidden ' />
       </div>
+
       <div>
         {/* Hello_Text */}
         <div className='lg:absolute lg:top-40 md:absolute md:bottom-9 ml-4 md:ml-[60px] lg:ml-[164px] bottom-48 md:max-w-[473px] lg:max-w-[746px] max-w-[347px] text_cont--hero'>
@@ -26,7 +28,7 @@ const Hero = () => {
           </div>
 
           {/* Position Text */}
-          <div className=' hover:shadow-none group hover:translate-x-px ease-in relative z-0 duration-75 hover:translate-y-px lg:px-[49px] md:mt-[11px] lg:py-[26px] md:max-w-[469px] md:min-h-[66px] lg:max-w-[745px] lg:max-h-[120px] position_cont mt-[6px] lg:mt-[24px]'>
+          <div className=' relative z-0 duration-75 lg:px-[49px] md:mt-[11px] lg:py-[26px] md:max-w-[469px] md:min-h-[66px] lg:max-w-[745px] lg:max-h-[120px] position_cont mt-[6px] lg:mt-[24px]'>
             <h2 className='text-lg  group-hover:translate-x-0 group-hover:translate-y-0 md:text-3xl lg:text-[54px] position_text'>A Full Stack Developer</h2>
           </div>
         </div>

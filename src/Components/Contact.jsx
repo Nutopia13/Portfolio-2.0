@@ -12,7 +12,7 @@ const Contact = () => {
         <h3 className='contact_title max-w-[1000px]  text-bright_yellow'> Would you like to discuss <span className='text-white'>the project ?</span></h3>
 
         <form name="contact" action='POST' className='flex mt-14 flex-col space-y-5 w-fit'>
-          <div className='flex flex-wrap gap-8'>
+          <div className='flex flex-wrap gap-4 md:gap-8'>
         <div className='first_input relative z-20'>
           <input required className='Contact_Input' name='fullName' type="text" />
         </div>
