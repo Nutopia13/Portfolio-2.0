@@ -28,7 +28,7 @@ const Contact = () => {
         </div>
 
     
-        <button  type='submit' className='btn3 relative z-20 hover:shadow-none ease-in  lg:max-w-[220px] max-w-[170px] duration-75  uppercase font-extrabold text-sm lg:text-lg bg-bright_yellow py-2.5 px-6 lg:py-4 lg:px-9'>Contact Me</button>
+        <input type='submit' value='Send Message' className='btn3 relative z-20 hover:shadow-none ease-in  lg:max-w-[220px] max-w-[170px] duration-75  uppercase font-extrabold text-sm lg:text-lg bg-bright_yellow py-2.5 px-6 lg:py-4 lg:px-9'></input>
 
       </form>
       </div>
