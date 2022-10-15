@@ -11,7 +11,7 @@ const Contact = () => {
        
         <h3 className='contact_title max-w-[1000px]  text-bright_yellow'> Would you like to discuss <span className='text-white'>the project ?</span></h3>
 
-        <form name="contact" action='POST' data-netlify="true" className='flex mt-14 flex-col space-y-5 w-fit'>
+        <form name="contact" action='POST' className='flex mt-14 flex-col space-y-5 w-fit'>
         <div className='first_input relative z-20'>
           <input required className='Contact_Input' name='fullName' type="text" />
         </div>
@@ -28,7 +28,7 @@ const Contact = () => {
         </div>
 
     
-        <input type='submit' value='Send Message' className='btn3 relative z-20 hover:shadow-none ease-in  lg:max-w-[220px] max-w-[170px] duration-75  uppercase font-extrabold text-sm lg:text-lg bg-bright_yellow py-2.5 px-6 lg:py-4 lg:px-9'></input>
+        <button type='submit' className='btn3 relative z-20 hover:shadow-none ease-in  lg:max-w-[220px] max-w-[170px] duration-75  uppercase font-extrabold text-sm lg:text-lg bg-bright_yellow py-2.5 px-6 lg:py-4 lg:px-9'>Submit</button>
 
       </form>
       </div>
