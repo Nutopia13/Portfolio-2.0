@@ -425,14 +425,14 @@ transform: rotate(-2deg);
   animation: bounce_port 1s infinite; 
   position: absolute !important;
   top: 90% !important;
-  right: 37% !important ;
+  right: 39% !important ;
 }
 
 .swiper-button-prev{
   animation: bounce_port--1 1s infinite; 
   position: absolute !important;
   top: 90% !important;
-  left: 37% !important;
+  left: 39% !important;
 }
 
 @keyframes bounce_port {
@@ -458,12 +458,12 @@ transform: rotate(-2deg);
 }
 
 .swiper-button-next::after{
-  content: url('/src/assets/RightArrow.svg') !important;
+  content: url('/src/assets/Right_arrow.svg') !important;
 }
 
 
 .swiper-button-prev::after{
-  content: url('/src/assets/LeftArrow.svg') !important;
+  content: url('/src/assets/Left_arrow.svg') !important;
 }
 
 
