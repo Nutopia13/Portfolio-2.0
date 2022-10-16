@@ -305,6 +305,38 @@ text-shadow: -4px 4px 0px #06283D;
   transform: rotate(3deg) !important; 
 }
 
+.skills_cont--slide .swiper-button-next{
+  animation: bounce 2s infinite !important; 
+  top: 95% !important;
+}
+
+.skills_cont--slide .swiper-button-prev{
+  animation: bounce_1 2s infinite !important; 
+  top: 95% !important;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(20%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  70% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes bounce_1 {
+  0%, 100% {
+    transform: translateX(-20%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
 
 /* Portfolio */
 
@@ -370,15 +402,39 @@ transform: rotate(-2deg);
 /* SwiperJS Navigation Customization */
 
 .swiper-button-next{
+  animation: bounce_port 2s infinite; 
   position: absolute !important;
   top: 90% !important;
   right: 37% !important ;
 }
 
 .swiper-button-prev{
+  animation: bounce_port--1 2s infinite; 
   position: absolute !important;
   top: 90% !important;
   left: 37% !important;
+}
+
+@keyframes bounce_port {
+  0%, 100% {
+    transform: translateX(20%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  72% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+@keyframes bounce_port--1 {
+  0%, 100% {
+    transform: translateX(-20%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  60% {
+    transform: translateX(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
 .swiper-button-next::after{

@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <div>
-    <div className='w-full max-h-[500px] md:max-h-full pt-16 md:bg-contain bg-center'>
+    <div className='w-full max-h-[628px] md:max-h-full pt-16 md:bg-contain bg-center'>
         <div>
         {/* Hello_Text */}
         <div className='ml-4 md:ml-[60px] lg:ml-[164px] md:max-w-[473px] lg:max-w-[746px] max-w-[347px] text_cont--hero'>

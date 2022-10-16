@@ -23,7 +23,7 @@ function App() {
           <About  />
         </section>
         <section id='skills'>
-          <Skills className='skills w-full flex justify-center items-center' />
+          <Skills className='skills w-full' />
         </section>
         <section id='portfolio' className="portfolio">
           <Portfolio  className = 'w-full flex justify-center items-center'/>
