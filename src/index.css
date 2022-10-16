@@ -317,10 +317,10 @@ text-shadow: -4px 4px 0px #06283D;
 
 @keyframes bounce {
   0%, 100% {
-    transform: translateX(20%);
+    transform: translateX(10%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
-  70% {
+  50% {
     transform: translateX(0);
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
@@ -328,7 +328,7 @@ text-shadow: -4px 4px 0px #06283D;
 
 @keyframes bounce_1 {
   0%, 100% {
-    transform: translateX(-20%);
+    transform: translateX(-10%);
     animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
   50% {
