@@ -37,7 +37,7 @@ const About = () => {
             <div className='about_text lg:max-w-[705px]  max-w-[321px] bg-white border-dark_blue border-4'>
               <p className=' about_p  lg:text-2xl lg:max-w-[580px] max-w-[300px] text-base pt-[36px] px-[20px] lg:px-11 text-left font-oswald '>
                 Hello World, my name is Vlad and I’m a Full Stack Developer from Ukraine. I work remotely, stay flexible and always try to live in the process of learning new things. </p>
-              <p className=' about_p lg:text-2xl lg:max-w-[580px] max-w-[310px] text-base pb-[36px] px-[20px] pt-[25px] lg:px-11 text-left font-oswald'>I focus on frontend, backend, and architecture. Always try to build things easy, stable and scalable. I provide a broad range of services from designing your software system up to developing it with focus on stability, performance and scalability. When I'm not crunching through code, I'm out at a start-up pitch or exploring the world.</p>
+              <p className=' about_p lg:text-2xl lg:max-w-[580px] max-w-[310px] text-base pb-[36px] px-[20px] pt-[25px] lg:px-11 text-left font-oswald'>I focus on frontend, backend, and architecture. Always try to build things easy, stable and scalable. Currently, I'm looking for a great opportunity where I can use my skillset to build customer-focused products on the frontend. When I'm not crunching through code, I'm out at a start-up pitch or exploring the world.</p>
             </div>
           
           <motion.button
