@@ -16,7 +16,7 @@ function App() {
       </header>
 
       <main>
-        <section  id='hero' className="hero w-full overflow-hidden">
+        <section  id='hero' className="hero bg-cover w-full overflow-hidden">
           <Hero />
         </section>
         <section   id='about' className ='about w-full'>

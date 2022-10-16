@@ -32,8 +32,8 @@ const Navbar = () => {
         </div>
         <NavPopUp trigger={buttonPop} setTrigger = {setbuttonPop} />
         <div 
-        className='hidden md:flex lg:flex  md:items-center gap-7'>
-          <ul className='stroke flex lg:ml-64 justify-center gap-4 lg:gap-9 font-bold text-sm lg:text-xl'>
+        className='hidden md:flex lg:flex lg:justify-between md:items-center gap-12'>
+          <ul className='stroke flex justify-center gap-6 font-bold text-sm lg:text-xl'>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skill</a></li>

@@ -18,7 +18,7 @@ const Skills = () => {
     ) 
 })
   return (
-    <div className='bg-blue1 skills  lg:pt-72 pt-16 lg:pb-36 pb-14'>
+    <div className='bg-blue1 skills  lg:pt-24 pt-16 lg:pb-36 pb-14'>
       <div className='text-white text-center lg:text-left mt-10'>
         <h2 className='lg:ml-32 skills_title font-bold font-oswald md:text-6xl lg:text-[90px] text-4xl'>My <span className='text-bright_yellow'>Skills</span></h2>
       </div>

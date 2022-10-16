@@ -3,8 +3,8 @@ import { motion } from "framer-motion"
 
 const RunningText_Desk = () => {
   return (
-    <div className='flex justify-center'>
-        <div className='absolute top-[125%] w-full z-50 lg:flex h-[94px] hidden justify-center items-center md:hidden uppercase font-oswald bg-azra text-white running_text font-bold text-4xl'>
+    <div className='flex justify-center lg:mt-36'>
+        <div className=' w-full z-50 lg:flex h-[94px] hidden justify-center items-center md:hidden uppercase font-oswald bg-azra text-white running_text font-bold text-4xl'>
     
           <motion.h3 
           initial={{

@@ -3,21 +3,17 @@ import MyResume from '../Components/MyResume'
 import TextScroller from './RunningText'
 import spiral from '../assets/Spiral.svg'
 import RunningText_Desk from './RunningText_Desk'
-import MovingComponent from 'react-moving-text'
+import Running_Text_Tab from './Running_Text_Tab'
 
 
 const Hero = () => {
 
   return (
-    <div className='w-full md:max-h-[560px] lg:min-h-[900px] pt-16 md:bg-contain md:min-w-[768px] lg:bg-contain max-h-[700px] bg-center'>
-      <img src={spiral} alt="Hero Img" className='lg:relative hidden max-w-[70%] lg:z-50 lg:block top-[15%] bottom-20 left-[50%]' />
-      <div className='w-[768px] h-[550px] hidden lg:hidden md:block overflow-hidden bottom-16 left-[40%] relative'>
-        <img src={spiral} alt="Hero Img" className=' md:max-w-[800px] relative z-20 hidden  md:block lg:hidden ' />
-      </div>
-
-      <div>
+    <div>
+    <div className='w-full max-h-[500px] md:max-h-full pt-16 md:bg-contain bg-center'>
+        <div>
         {/* Hello_Text */}
-        <div className='lg:absolute lg:top-40 md:absolute md:bottom-9 ml-4 md:ml-[60px] lg:ml-[164px] bottom-48 md:max-w-[473px] lg:max-w-[746px] max-w-[347px] text_cont--hero'>
+        <div className='ml-4 md:ml-[60px] lg:ml-[164px] md:max-w-[473px] lg:max-w-[746px] max-w-[347px] text_cont--hero'>
           <div className='hello_cont md:h-[72px] h-[60px] lg:h-[112px] w-[149px] md:w-[179px] lg:min-w-[273px] lg:text-[64px] md:text-4xl text-2xl'>
            <h1 className='hello_text'>Hello</h1>
           </div>
@@ -31,16 +27,25 @@ const Hero = () => {
           <div className=' relative z-0 duration-75 lg:px-[49px] md:mt-[11px] lg:py-[26px] md:max-w-[469px] md:min-h-[66px] lg:max-w-[745px] lg:max-h-[120px] position_cont mt-[6px] lg:mt-[24px]'>
             <h2 className='text-lg  group-hover:translate-x-0 group-hover:translate-y-0 md:text-3xl lg:text-[54px] position_text'>A Full Stack Developer</h2>
           </div>
+
+          <MyResume />
         </div>
-        
-        <MyResume />
-  
-        <div className='clip_desk hidden lg:block'>  
+      
+    
         </div>
-        <RunningText_Desk />
+        <img src={spiral} alt="" className='spiral lg:hidden md:hidden max-w-[594px] relative bottom-20 right-[14%] z-20'/>
         <TextScroller />
 
-      </div>
+      
+  
+        
+
+    </div>
+    
+        <RunningText_Desk />
+        <Running_Text_Tab />
+    
+
     </div>
   )
 }

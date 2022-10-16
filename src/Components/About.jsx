@@ -1,5 +1,5 @@
 import React from 'react'
-import about_pic from '../assets/About_Me.svg'
+import about_pic from '../assets/About_Pic.svg'
 import { motion } from "framer-motion"
 import check from '../assets/Checkbox_Mob.svg'
 import lighting from '../assets/Full_Lighting.svg'
@@ -8,7 +8,7 @@ import lighting from '../assets/Full_Lighting.svg'
 const About = () => {
   
   return (
-    <div className='mx-auto max-h-[1150px] about_inner bg-[120%] bg-center bg-pink'>
+    <div className='mx-auto about_inner bg-[120%] bg-center bg-pink'>
       <div className=' flex mx-auto flex-wrap md:ml-10 md:space-x-10 md:justify-around lg:max-w-[1500px] md:max-w-[700px] items-center max-w-[370px] justify-center'>
         <motion.img 
         initial={{
@@ -21,7 +21,7 @@ const About = () => {
         whileInView={{opacity: 1, x:0}}
         transition={{type:'spring', duration: 1.5, bounce: 0.5}}
         viewport = {{ones:true}}
-        src={about_pic} alt="" className='lg:w-[500px] pt-10 lg:pt-32  md:w-[300px]'/>
+        src={about_pic} alt="" className='about_photo lg:w-[500px] pt-10 lg:pt-32  md:w-[300px]'/>
 
     
       <div className='text_cont--about lg:pt-32 pt-10'>
@@ -47,10 +47,10 @@ const About = () => {
           </motion.button>
       </div>
       </div>
-      
-        <img loading="lazy" src={lighting} className =  'left-3/4 lg:top-48 top-15 md:top-24 lg:min-w-[232px] lg:min-h-[371px] max-w-[72px] h-[116px] relative z-50 right-14' />
-    
-      <img loading="lazy" src={check} alt="" className=' relative w-full h-full md:top-2 lg:-top-28 bottom-12 overflow-hidden' />
+      <div className='w-full flex relative top-20 lg:top-72 items-center justify-end'>
+        <img loading="lazy" src={lighting} className =  'lg:min-w-[232px] lg:min-h-[371px] max-w-[72px] mr-14 h-[116px z-50' />
+      </div>
+      <img loading="lazy" src={check} alt="" className=' relative w-full h-full top-1 overflow-hidden' />
     </div>
   )
 }

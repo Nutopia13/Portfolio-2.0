@@ -30,20 +30,20 @@ const Contact = () => {
   return (
     <div className='pt-8 lg:pt-16  bg-blue1 overflow-hidden relative'>
       <img src={spiral_contact} loading="lazy" alt="" className='hidden lg:block md:block md:max-w-[80%]  absolute z-10 right-0' />
-      <div className='m-auto md:ml-8 lg:ml-32 lg:px-0 px-5 max-w-[340px] md:max-w-[700px] lg:max-w-[1200px]'>
+      <div className='mx-auto px-5 max-w-[340px] md:max-w-[700px] lg:max-w-[1200px]'>
        
         <h3 className='contact_title max-w-[1000px]  text-bright_yellow'> Would you like to discuss <span className='text-white'>the project ?</span></h3>
 
         <form name="contact" onSubmit={onSubmit} action="https://api.web3forms.com/submit" method="POST" className='flex mt-14 flex-col space-y-5 w-fit'>
         <input type="hidden" name="access_key" value="1564fb77-bdc9-44e7-a14d-7f30f86df76b" />
-          <div className='flex flex-wrap gap-4 md:gap-8'>
+          <div className='flex flex-wrap space-y-4 md:space-y-0 md:space-x-2'>
         <div className='first_input relative z-20'>
           <label for = 'name'>Full Name</label>
           <input required className='Contact_Input' name='fullName' id='name' type="text" />
         </div>
 
         <div className='second_input relative z-20'>
-          <label className='flex items-center gap-4' for='email'>Email <img className='max-w-[25px] lg:max-w-[30px] relative' src={email} alt="" /></label>
+          <label className='flex items-center justify-around ' for='email'>Email <img className='max-w-[25px] lg:max-w-[30px]' src={email} alt="" /></label>
           <input required className='Contact_Input' id='email' name='email' type="email" />
         </div>
         </div>

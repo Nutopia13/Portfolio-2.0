@@ -107,7 +107,12 @@ transform: rotate(-2.82deg);
 /* Hero Text Styling */
 
 .hero{
-  background-image: url(./assets/SquareBg.png);
+  background-image: url('./assets/SquareBg.png');
+}
+@media only screen and (min-width: 767px){
+.hero{
+  background-image: url(./assets/Spiral_bg.svg);
+}
 }
 
 .hello_cont{
@@ -152,28 +157,6 @@ transform: rotate(-2deg);
 
 
 
-.clip_mob {
-    clip-path: polygon(100% 41%, 100% 100%, 0 100%, 0 65%);
-    background: #F1D624;
-    min-height: 300px;
-    width: 110vw;
-}
-
-.clip_desk{
-    position: absolute;
-    top: 27%;
-    clip-path: polygon(100% 46%, 100% 100%, 0 100%, 0 74%);;
-    background: #F1D624;
-    min-width: 100vw;
-    min-height: 800px;
-}
-
-.clip_tab{
-    clip-path: polygon(100% 41%, 100% 100%, 0 100%, 0 55%);
-    background: #F1D624;
-    min-width: 100vw;
-    min-height: 300px;
-}
 
 
 .name_cont{
@@ -266,6 +249,7 @@ box-shadow: -18px 18px 0px #06283D;
   right: 75%;
 }  */
 
+
 .about_title{
     margin-top: 21px;
     text-transform: uppercase;
@@ -281,6 +265,8 @@ box-shadow: -18px 18px 0px #06283D;
 }
 
 }
+
+
 
 .about_text{
     box-shadow: 12px 12px 0px #F1D624;
@@ -429,12 +415,15 @@ line-height: 108px
 
 .Contact_Input{
 
-  @apply outline-none duration-300 lg:border-4 border-2 border-dark_blue lg:px-6 px-4 lg:py-5 py-2 lg:w-[582px] w-[300px] text-dark_blue placeholder-dark_blue transition-all focus:border-bright_yellow
+  @apply outline-none duration-300 lg:border-4 border-2 border-dark_blue lg:px-6 px-4 lg:py-5 py-2 lg:w-[450px] w-[300px] text-dark_blue placeholder-dark_blue transition-all focus:border-bright_yellow
 }
 .Contact_Input:valid{
-  @apply lg:border-4 border-[#13CE66] border-2 rounded-sm
+  @apply lg:border-4 border-[#13CE66] border-2 rounded-lg
 }
 
+.about_photo{
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);}
 
 
 label{

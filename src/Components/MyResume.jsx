@@ -8,15 +8,13 @@ import Running_Text_Tab from './Running_Text_Tab'
 const MyResume = () => {
   return (
     <div>
-    <div className='lg:max-w-[1220px] '>
-      <div className=' pl-[15px] mt-[30px] lg:mt-[73px] max-w-full  z-10 lg:max-w-[1200px]'>
-        <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><img src={arrow} alt="" className='z-30 relative  md:left-16 md:absolute md:top-full lg:absolute checkout lg:top-3/4 lg:mt-6 lg:left-40 max-w-[104px] lg:max-w-[200px] md:max-w-[91px]'/></a>
-        <img src={spiral} alt="" className='spiral lg:hidden md:hidden max-w-[594px] relative bottom-20 right-[14%] z-20'/>
+    <div>
+      <div className='mt-[30px] z-30 lg:mt-20'>
+        <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><img src={arrow} alt="" className='z-30 relative checkout max-w-[104px] lg:max-w-[200px] md:max-w-[91px]'/></a>
       </div>
      
 
-      </div>
-      <Running_Text_Tab />
+    </div>
       </div>
       
       
