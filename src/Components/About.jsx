@@ -1,30 +1,69 @@
 import React from 'react'
 import about_pic from '../assets/About_Pic.svg'
 import { motion } from "framer-motion"
-import check from '../assets/Checkbox_Mob.svg'
 import lighting from '../assets/Full_Lighting.svg'
 
 
 const About = () => {
+
+  const imgVariants = {
+    offscreen: {
+      x: -200,
+      opacity: 0
+      
+    
+    },
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        delay: 1,
+        bounce: 0.7,
+        duration: 3
+      }
+    }
+  };
+
+  const textVariants = {
+    offscreen: {
+      x: 200,
+      opacity: 0
+      
+    
+    },
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        delay: 1,
+        bounce: 0.7,
+        duration: 3
+      }
+    }
+  };
   
   return (
-    <div className='mx-auto about_inner bg-[120%] bg-center bg-pink'>
-      <div className=' flex mx-auto flex-wrap md:ml-10 md:space-x-10 md:justify-around lg:max-w-[1500px] md:max-w-[700px] items-center max-w-[370px] justify-center'>
+    <div className='mx-auto  lg:max-h-[120vh]  about_inner bg-[120%] bg-center bg-pink'>
+      <div className=' flex m-auto overflow-x-hidden flex-wrap md:ml-10 md:space-x-10 md:justify-around lg:max-w-[1500px] md:max-w-[700px] items-center max-w-[370px] justify-center'>
         <motion.img 
-        initial={{
-          x: -200,
-          opacity: 0,
-  
-         }}
+        variants={imgVariants}
 
-  
-        whileInView={{opacity: 1, x:0}}
-        transition={{type:'spring', duration: 1.5, bounce: 0.5}}
-        viewport = {{ones:true}}
+initial="offscreen"
+whileInView="onscreen"
+viewport={{ once: true }}
+        
         src={about_pic} alt="" className='about_photo lg:w-[500px] pt-10 lg:pt-32  md:w-[300px]'/>
 
     
-      <div className='text_cont--about lg:pt-32 pt-10'>
+      <motion.div 
+       variants={textVariants}
+
+       initial="offscreen"
+       whileInView="onscreen"
+       viewport={{ once: true }}
+      className='text_cont--about lg:pt-32 pt-10'>
           
           <h3 className='about_title lg:text-[80px] font-oswald text-3xl font-bold text-white'>About Me</h3>
  
@@ -45,12 +84,12 @@ const About = () => {
     whileTap={{ scale: 0.9 }}>
           <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><button className='lg:left-14 lg:text-[30px] text-lg font-oswald text-dark_blue font-bold btn2 py-2 px-5 relative bottom-6 left-7 lg:px-10 hover:shadow-none ease-in  duration-75 lg:py-5 uppercase bg-azra'>Resume</button></a>
           </motion.button>
-      </div>
+      </motion.div>
       </div>
       <div className='w-full flex relative top-20 lg:top-72 items-center justify-end'>
-        <img loading="lazy" src={lighting} className =  'lg:min-w-[232px] lg:min-h-[371px] max-w-[72px] mr-14 h-[116px z-50' />
+        <img loading="lazy" src={lighting} className =  'lg:relative bottom-24 lg:min-w-[232px] lg:min-h-[371px] max-w-[72px] mr-14 h-[116px] z-50' />
       </div>
-      <img loading="lazy" src={check} alt="" className=' relative w-full h-full top-1 overflow-hidden' />
+
     </div>
   )
 }

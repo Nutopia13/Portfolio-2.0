@@ -12,6 +12,25 @@ import Skills_Mob from './Skills_Mob'
 
 const Skills = () => {
 
+  const skillsVariants = {
+    offscreen: {
+      x: -100,
+      opacity: 0
+      
+    
+    },
+    onscreen: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        delay: 1,
+        bounce: 0.7,
+        duration: 2
+      }
+    }
+  };
+
   const skill_card = data.skills.map(item => {
     return (
         <Skills_Component
@@ -24,6 +43,7 @@ const Skills = () => {
 })
   return (
     <div className='bg-blue1 skills  lg:pt-24 pt-16 lg:pb-36 pb-14'>
+      <img loading="lazy" src={check} alt="" className=' relative w-full h-full lg:bottom-28 bottom-16 overflow-hidden' />
       <div className='text-white text-center lg:text-left mt-10'>
         <h2 className='lg:ml-32 skills_title font-bold font-oswald md:text-6xl lg:text-[90px] text-4xl'>My <span className='text-bright_yellow'>Skills</span></h2>
       </div>
@@ -61,16 +81,11 @@ const Skills = () => {
         </SwiperSlide>
 </Swiper>
       <motion.div 
-      initial={{
-        x: -200,
-        opacity: 0,
+      variants={skillsVariants}
 
-      }}
-
-      whileInView={{opacity: 1, x:0}}
-      transition={{type:'spring', duration: 2, bounce: 0.7}}
-      viewport = {{ones:true}}
-
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true }}
 
       className='hidden md:flex justify-center flex-wrap items-center lg:space-x-12 md:space-x-7 space-x-3'>
 

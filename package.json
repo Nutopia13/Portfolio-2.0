@@ -18,6 +18,7 @@
     "react-moving-text": "^0.0.7",
     "react-simple-typewriter": "^4.0.2",
     "react-slick": "^0.29.0",
+    "react-spinners": "^0.13.6",
     "react-swipeable": "^7.0.0",
     "slick-carousel": "^1.8.1",
     "swiper": "^8.4.4"

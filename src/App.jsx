@@ -5,15 +5,35 @@ import Hero from "./Components/Hero"
 import Navbar from "./Components/Navbar"
 import Portfolio from './Components/Portfolio'
 import Skills from './Components/Skills'
+import { useState, useEffect } from "react"
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 
 function App() {
 
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() =>{
+    setLoading(true) 
+    setTimeout(() =>{
+      setLoading(false)
+    }, 1500)
+  }, [])
+
   return (
-    <div className="App z-0">
+    <div className="page min-h-[100vh]">
+    
+     {loading ? (
+    <PacmanLoader className="loader" size={50} color="#F1D624" loading = {loading}/>)
+    
+  
+     :(
+    <div className="App">
+
       <header id='navbar' className='w-full'>
         <Navbar />
       </header>
+    
 
       <main>
         <section  id='hero' className="hero bg-cover w-full overflow-hidden">
@@ -33,11 +53,15 @@ function App() {
         </section>
       </main>
       
-      <footer>
-         <Footer className = 'w-full flex justify-center items-center' />
+      <footer className="bg-white">
+         <Footer className = '  w-full flex justify-center items-center' />
       </footer>
       
     </div>
+      )}
+      
+
+  </div>
   )
 }
 

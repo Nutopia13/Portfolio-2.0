@@ -8,6 +8,25 @@ html{
   scroll-behavior: smooth ;
 }
 
+.page{
+background-image: url('./assets/SquareBg.png');
+}
+
+.loader{
+position: relative;
+top: 50vh;
+left: 20%;
+
+}
+
+@media only screen and (min-width: 767px){
+
+  .loader{
+    position: relative;
+    top: 45vh;
+    left: 45vw;
+}
+}
 
 /* Scrollbar */
 

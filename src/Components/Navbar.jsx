@@ -21,7 +21,7 @@ const Navbar = () => {
       }}
       whileTap = {{border: 1}}
       whileInView={{opacity: 1}}
-      transition={{type:'spring', duration: 0.7, bounce: 0.7}}
+      transition={{type:'spring', duration: 1, bounce: 0.7}}
       viewport = {{ones:true}}
 
       className='md:gap-16 relative z-50 m-auto font-oswald lg:max-w-[1200px] md:max-w-[655px] max-w-[345px] min-h-[72px] justify-between lg:min-h-[112px] items-center flex lg:justify-between'>

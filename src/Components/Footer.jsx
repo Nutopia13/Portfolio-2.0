@@ -6,7 +6,7 @@ import twitter from '../assets/Icons/Twitter.svg'
 
 const Footer = () => {
   return (
-    <div className='lg:max-w-[1200px] m-auto mt-10 mb-10'>
+    <div className='lg:max-w-[1200px] m-auto pt-10 pb-10'>
       <div className='lg:hidden md:hidden space-y-9 flex flex-wrap  justify-center'>
         <img src={logoMob} alt="Logo" className='lg:min-w-[305px]' />
         <ul className='stroke flex uppercase justify-center space-x-4  flex-wrap font-bold text-sm lg:text-xl'>
