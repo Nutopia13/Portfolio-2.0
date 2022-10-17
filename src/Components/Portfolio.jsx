@@ -1,8 +1,7 @@
 import React from 'react'
 import Portfolio_Component_Mob from './Portfolio_Component_Mob'
 import data from '../data'
-import { useRef } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -10,10 +9,14 @@ import '../index.css'
 import { Navigation } from "swiper";
 import Portfolio_Components from './Portfolio_Compononets'
 import Weather from './Weather';
+import {useState} from 'react'
+import sun from '../assets/sun.svg'
 
   
 
 const Portfolio = () => {
+
+  const [weatherButtonPop, setWeatherbuttonPop] = useState(false)
 
     const cards = data.portfolio.map(item => {
         return (
@@ -25,14 +28,21 @@ const Portfolio = () => {
         ) 
     })
   return (
+  
+    
     <div className='bg-center  md:pb-32 pb-8'>
+      <Weather trigger={weatherButtonPop} setTrigger = {setWeatherbuttonPop} />
       <div className='lg:pt-32 pt-16'>
-        <div>
+        <div className='flex items-center'>
           <h2 className='m-auto md:text-left md:max-w-[436px] md:ml-12 lg:ml-32 lg:max-w-[765px] max-w-[333px] portfolio_title'>Why people love <br/>
           <span className='text-bright_yellow'>my work </span></h2>
+          <motion.img 
+          whileHover={{ scale: 1.4 }}
+          whileTap={{ scale: 0.9 }}
+          src={sun} onClick ={() => setWeatherbuttonPop(true)} alt=""  className='relative hidden md:block  right-60 max-w-[80px]'/>
         </div>
-       
-        <Weather />
+        
+    
         <div
         className='hidden progress-bar overflow-x-scroll md:flex m-auto port_cont--slide  max-w-[350px] md:max-w-[750px] lg:max-w-full flex-row  lg:pt-16 pt-16'>
         {cards}

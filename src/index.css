@@ -420,57 +420,89 @@ letter-spacing: 1px;
 text-transform: uppercase;
 }
 
-/* .img_cont {
-	position: relative;
-}
-.img_cont::before {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	z-index: 2;
-	display: block;
-	content: '';
-	width: 0;
-	height: 0;
-	background: rgba(255,255,255,.2);
-	border-radius: 100%;
-	-webkit-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	opacity: 1;
-}
-.img_cont:hover::before {
-	-webkit-animation: circle .75s;
-	animation: circle .75s;
-} */
 
+/* Weather Widget */
 
-/* @-webkit-keyframes circle {
-	0% {
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	100% {
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-	}
+.weather{
+  min-height: 100vh;
+  background-image: url('./assets/pattern.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-@keyframes circle {
-	0% {
-		opacity: 1;
-	}
-	40% {
-		opacity: 1;
-	}
-	100% {
-		width: 100%;
-		height: 100%;
-		opacity: 0;
-	}
-} */
 
+.current_weather { 
+
+  width: 300px;
+  border-radius: 6px;
+  color: #06283D ;
+  background-color: bisque;
+  margin: 40px auto 0 auto;
+  padding: 0 20px 20px 20px;
+}
+
+.weather_container{
+  background-color: antiquewhite;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.weather-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+}
+
+.weather-icon {
+  width: 100px;
+}
+
+.temperature {
+  font-weight: 600;
+  font-size: 70px;
+  width: auto;
+  letter-spacing: -5px;
+  margin: 10px 0;
+}
+
+.details {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parameter-label {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.parameter-value {
+  text-align: right;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.parameter-label.top {
+  border-bottom: 1px solid #fff;
+}
 
 
 
