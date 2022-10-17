@@ -24,9 +24,9 @@ const NavPopUp = (props) => {
       transition={{duration: 0.3}}
       viewport = {{ones:true}}
       
-      className='popup-inner'>
+      className='popup'>
       <ul 
-      className=' pb-[42px] stroke pop-list bg-white text-center px-[158px] font-bold text-2xl font-oswald  '>
+      className=' pb-[42px] flex justify-center flex-wrap stroke pop-list bg-white text-center px-[158px] font-bold text-2xl font-oswald  '>
       <CircleClose onClick = {() => props.setTrigger(false)} className='close_popUp relative top-4 left-40'/>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>

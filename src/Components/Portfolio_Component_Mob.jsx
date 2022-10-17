@@ -9,8 +9,8 @@ const Portfolio_Component_Mob = (props) => {
   return (
     <div className='flex flex-col flex-wrap'>
     <div className='m-auto min-w-[340px] pt-2 pb-8 flex flex-wrap flex-col'>
-      <div className='img_cont w-[325px] h-[210px] bg-contain'>
-        <img src={props.image} alt="" className='w-full h-full' />
+      <div className='img_cont drop-shadow-md w-[325px] h-[210px] bg-contain'>
+        <a target = '_blank' href={props.link}><img src={props.image} alt="" className='w-full h-full' /></a>
       </div>
       <div className='port_text--cont max-w-[340px] font-oswald pt-8 text-dark_blue text-left '>
       <div className='flex gap-4 items-center '>
