@@ -39,7 +39,7 @@ const Portfolio = () => {
           <motion.img 
           whileHover={{ scale: 1.4 }}
           whileTap={{ scale: 0.9 }}
-          src={sun} onClick ={() => setWeatherbuttonPop(true)} alt=""  className='relative hidden md:block  right-60 max-w-[80px]'/>
+          src={sun} onClick ={() => setWeatherbuttonPop(true)} alt=""  className='relative hidden md:block md:right-28 lg:right-60 max-w-[80px]'/>
         </div>
         
     
