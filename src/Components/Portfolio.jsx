@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import '../index.css'
 import { Navigation } from "swiper";
 import Portfolio_Components from './Portfolio_Compononets'
+import Weather from './Weather';
 
   
 
@@ -31,7 +32,7 @@ const Portfolio = () => {
           <span className='text-bright_yellow'>my work </span></h2>
         </div>
        
-        
+        <Weather />
         <div
         className='hidden progress-bar overflow-x-scroll md:flex m-auto port_cont--slide  max-w-[350px] md:max-w-[750px] lg:max-w-full flex-row  lg:pt-16 pt-16'>
         {cards}
