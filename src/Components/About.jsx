@@ -37,7 +37,7 @@ const About = () => {
       opacity: 1,
       transition: {
         type: "spring",
-        delay: 1,
+        delay: 0.5,
         bounce: 0.7,
         duration: 3
       }

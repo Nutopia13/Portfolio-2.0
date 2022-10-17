@@ -8,6 +8,7 @@ import Running_Text_Tab from './Running_Text_Tab'
 
 const Hero = () => {
 
+
   return (
     <div>
     <div className='w-full max-h-[628px] md:max-h-full pt-16 md:bg-contain bg-center'>
