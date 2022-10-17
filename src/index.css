@@ -430,14 +430,14 @@ transform: rotate(-2deg);
 .swiper-button-next{
   animation: bounce_port 1s infinite; 
   position: absolute !important;
-  top: 90% !important;
+  top: 95% !important;
   right: 39% !important ;
 }
 
 .swiper-button-prev{
   animation: bounce_port--1 1s infinite; 
   position: absolute !important;
-  top: 90% !important;
+  top: 95% !important;
   left: 39% !important;
 }
 
