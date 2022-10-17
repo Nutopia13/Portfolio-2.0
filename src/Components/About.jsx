@@ -69,8 +69,7 @@ viewport={{ once: true }}
  
               
               <div className='my_bio relative'>
-              {/* <img loading="lazy" src={lighting} className = 'max-w-[60px] justify-self-center self-center lg:min-w-[112px] lg:top-48 lg:-left-16 lg:max-h-[179px] max-h-[97px] top-36 -left-6 z-50' />  */}
-               <p className='text-dark_blue top-4 mt-8 left-5 border-2 justify-self-center self-center relative z-20 border-dark_blue font-oswald text-2xl bg-bright_yellow uppercase min-h-[51px] tracking-wide flex items-center max-w-[148px] font-bold lg:text-4xl pl-4'>My Bio</p>
+               <p className='text-dark_blue top-4 mt-8 left-5 border-2 justify-self-center self-center relative z-20 border-dark_blue font-oswald text-2xl bg-bright_yellow uppercase min-h-[51px] tracking-wide flex items-center max-w-[148px] font-bold lg:text-4xl pl-4 lg:mt-16'>My Bio</p>
               </div>
             
             <div className='about_text lg:max-w-[705px]  max-w-[321px] bg-white border-dark_blue border-4'>
@@ -87,7 +86,7 @@ viewport={{ once: true }}
       </motion.div>
       </div>
       <div className='w-full flex relative top-20 lg:top-72 items-center justify-end'>
-        <img loading="lazy" src={lighting} className =  'lg:relative bottom-24 lg:min-w-[232px] lg:min-h-[371px] max-w-[72px] mr-14 h-[116px] z-50' />
+        <img loading="lazy" src={lighting} className =  'lg:relative bottom-32 lg:min-w-[232px] lg:min-h-[371px] max-w-[72px] mr-14 h-[116px] z-50' />
       </div>
 
     </div>
