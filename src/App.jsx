@@ -11,23 +11,10 @@ import PacmanLoader from "react-spinners/PacmanLoader";
 
 function App() {
 
-  const [loading, setLoading] = useState(false)
-
-  useEffect(() =>{
-    setLoading(true) 
-    setTimeout(() =>{
-      setLoading(false)
-    }, 1500)
-  }, [])
-
+  
   return (
     <div className="page min-h-[100vh]">
     
-     {loading ? (
-    <PacmanLoader className="loader" size={50} color="#F1D624" loading = {loading}/>)
-    
-  
-     :(
     <div className="App">
 
       <header id='navbar' className='w-full'>
@@ -58,7 +45,6 @@ function App() {
       </footer>
       
     </div>
-      )}
       
 
   </div>
@@ -66,3 +52,22 @@ function App() {
 }
 
 export default App
+
+
+
+//Loading Screen
+
+      // const [loading, setLoading] = useState(false)
+    
+      // useEffect(() =>{
+      //   setLoading(true) 
+      //   setTimeout(() =>{
+      //     setLoading(false)
+      //   }, 1500)
+      // }, [])
+      
+    //   {loading ? (
+    //  <PacmanLoader className="loader" size={50} color="#F1D624" loading = {loading}/>)
+     
+    
+    //   :(

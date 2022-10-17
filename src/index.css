@@ -413,10 +413,10 @@ letter-spacing: 1px;
 text-transform: uppercase;
 }
 
-.port_card--title::after{
+/* .port_card--title::after{
   content: url('./assets/arrowLink.svg');
   padding-left: 24px;
-}
+} */
 
 
 

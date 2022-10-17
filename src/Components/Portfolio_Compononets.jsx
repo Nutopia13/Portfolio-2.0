@@ -4,18 +4,22 @@ import { HtmlIcon } from './Icons/HTML'
 import { ReactIcon } from './Icons/React_Icon'
 import { TailwindIcon } from './Icons/Tailwind_Icon'
 import {motion} from 'framer-motion'
+import arrowlink from '../assets/arrowLink.svg'
 
 const Portfolio_Components = (props) => {
   return (
 
     <div className='flex flex-col flex-wrap'>
     <div className='lg:ml-28 md:ml-6 lg:min-w-[478px] min-w-[338px] pb-8 pl-5 flex flex-wrap flex-col'>
-      <div className='img_cont max-w-[325px] max-h-[290px] lg:max-w-[460px] lg:max-h-[460px]'>
-        <img src={example} alt="" className='w-full' />
+      <div className='img_cont  w-[460px] h-[300px]'>
+        <img src={props.item.image} alt="" className='w-full h-full' />
       </div>
       <div  className='port_text--cont md:max-w-[300px] lg:max-w-[400px] max-w-[340px] font-oswald lg:pt-10 pt-6 text-dark_blue text-left '>
-        <h3 className='port_card--title lg:text-4xl underline'><a href="">{props.item.title}</a></h3>
-        <p className='pt-3 lg:5 text-base lg:text-2xl opacity-70'>{props.item.description}</p>
+        <div className='flex gap-4 items-center '>
+        <h3 className='port_card--title lg:text-4xl underline'><a  target="_blank" href={props.item.link}>{props.item.title}</a></h3>
+        <a className='min-w-[8%]' target="_blank" href={props.item.link}><img src={arrowlink} alt="" /></a>
+        </div>
+        <p className='pt-3 lg:5 text-base md:min-h-[90px] lg:min-h-[140px] lg:text-2xl opacity-70'>{props.item.description}</p>
         <div className='flex  space-x-3 pt-5 items-center'>
         <p className=' font-bold text-lg lg:text-2xl items-center'>Tech Stack:</p>
         <div className='flex space-x-1'>

@@ -1,5 +1,5 @@
 import React from 'react'
-import Portfolio_Component from './Portfolio_Component_Mob'
+import Portfolio_Component_Mob from './Portfolio_Component_Mob'
 import data from '../data'
 import { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
@@ -48,28 +48,36 @@ const Portfolio = () => {
         modules={[Navigation]}
       >
         <SwiperSlide>
-          <Portfolio_Component
+          <Portfolio_Component_Mob
+        image = 'src\assets\Portfolio\Earth_2.png'
+        link = 'https://nutopia13.github.io/Earth-2.0/'
+        title = 'Earth 2.0'
+        description = 'This is a random generator project which is themed around a possible habitat planets. Click and Explore. We might need it sooner than you think...'
+        />
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <Portfolio_Component_Mob
+        image = 'src\assets\Portfolio\Design_Agency.png'
+        link = 'https://inspiring-eclair-76217d.netlify.app/'
+        title = 'Design Agency'
+        description = 'Design solutions made easy. Design Agency is a digital design-led agency mainly focused on Product Development.'
+        />
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <Portfolio_Component_Mob
+        image = ''
+        link = ''
         title = 'Ugi Stelmokaitis'
         description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         />
         </SwiperSlide>
 
         <SwiperSlide>
-        <Portfolio_Component
-        title = 'Ugi Stelmokaitis'
-        description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        />
-        </SwiperSlide>
-
-        <SwiperSlide>
-        <Portfolio_Component
-        title = 'Ugi Stelmokaitis'
-        description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-        />
-        </SwiperSlide>
-
-        <SwiperSlide>
-        <Portfolio_Component
+        <Portfolio_Component_Mob
+        image = ''
+        link = ''
         title = 'Ugi Stelmokaitis'
         description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
         />
