@@ -62,14 +62,9 @@ const Skills = () => {
 })
   return (
     <div className='bg-blue1 skills  lg:pt-24 pt-16 lg:pb-36 pb-14'>
-      <motion.div 
-      variants={skillsVariants}
-      initial= 'offscreen_dots'
-      whileInView = 'onscreen_dots'
-      viewport={{ once: true }}
-      className='min-w-full cursor-move hidden lg:flex relative top-44 justify-end'>
+      <div className='min-w-full cursor-move hidden lg:flex relative top-44 justify-end'>
         <Dots />
-      </motion.div>
+      </div>
       <img loading="lazy" src={check} alt="" className=' relative w-full h-full lg:bottom-28 bottom-16 overflow-hidden' />
       <motion.div 
         variants={skillsVariants}

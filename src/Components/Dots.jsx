@@ -45,13 +45,43 @@ const Square = ({ active, setActive, colIndex, rowIndex, x, y }) => {
   );
 };
 
+
+
 const Dots = () => {
+
+    const skillsVariants = {
+     
+        offscreen_dots: {
+          x: 100,
+          opacity: 0
+          
+        
+        },
+        onscreen_dots: {
+          x: 0,
+          opacity: 1,
+          transition: {
+            type: "spring",
+            delay: 3,
+            bounce: 0.7,
+            duration: 2
+          }
+        },
+    
+      };
+
   const [active, setActive] = useState({ row: 0, col: 0 });
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
   return (
-    <div className="app right-24 absolute z-20 ">
+    <motion.div 
+
+    variants={skillsVariants}
+    initial= 'offscreen_dots'
+    whileInView = 'onscreen_dots'
+    viewport={{ once: true }}
+    className="app right-24 absolute z-20 ">
       <motion.div
         animate={{ "--base-hue": 360 }}
         initial={{ "--base-hue": 0 }}
@@ -85,7 +115,7 @@ const Dots = () => {
           )}
         </motion.div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
 

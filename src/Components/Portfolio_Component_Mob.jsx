@@ -3,10 +3,11 @@ import { HtmlIcon } from './Icons/HTML'
 import arrowlink from '../assets/arrowLink.svg'
 import { ReactIcon } from './Icons/React_Icon'
 import { TailwindIcon } from './Icons/Tailwind_Icon'
+import { Javascript } from './Icons/JavaScript'
 
 const Portfolio_Component_Mob = (props) => {
-  
-  
+  const [Javascript, setJavascript] = React.useState(false)
+
 
   return (
     <div className='flex flex-col flex-wrap'>
@@ -23,9 +24,7 @@ const Portfolio_Component_Mob = (props) => {
         <div className='flex  space-x-3 pt-5 items-center'>
         <p className=' font-bold text-lg items-center'>Tech Stack:</p>
         <div className='flex space-x-1'>
-          <HtmlIcon />
-          <ReactIcon /> 
-          <TailwindIcon />
+         {props.stack1}{props.stack2}{props.stack3}
         </div>
         </div>
       </div>

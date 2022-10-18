@@ -13,7 +13,10 @@ import {useState} from 'react'
 import sun from '../assets/sun.svg'
 import tic from '../assets/Icons/noughts-and-crosses.svg'
 import TicTacToe from './Tic -Tac-Toe/TicTacToe';
-
+import { ReactIcon } from './Icons/React_Icon'
+import { TailwindIcon } from './Icons/Tailwind_Icon'
+import { HtmlIcon } from './Icons/HTML'
+import { Javascript } from './Icons/JavaScript';
   
 
 const Portfolio = () => {
@@ -100,6 +103,9 @@ const Portfolio = () => {
         link = 'https://nutopia13.github.io/Earth-2.0/'
         title = 'Earth 2.0'
         description = 'This is a random generator project which is themed around a possible habitat planets. Click and Explore. We might need it sooner than you think...'
+        stack1 = {<HtmlIcon />} 
+        stack2 = {<Javascript />}
+        stack3 = {<TailwindIcon />}
         />
         </SwiperSlide>
 
@@ -109,6 +115,9 @@ const Portfolio = () => {
         link = 'https://inspiring-eclair-76217d.netlify.app/'
         title = 'Design Agency'
         description = 'Design solutions made easy. Design Agency is a digital design-led agency mainly focused on Product Development.'
+        stack1 = {<HtmlIcon />} 
+        stack2 = {<ReactIcon />}
+        stack3 = {<TailwindIcon />}
         />
         </SwiperSlide>
 
@@ -118,6 +127,9 @@ const Portfolio = () => {
         link = 'https://golden-meerkat-82b114.netlify.app/'
         title = 'Maker Pre-launch'
         description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        stack1 = {<HtmlIcon />} 
+        stack2 = {<ReactIcon />}
+        stack3 = {<TailwindIcon />}
         />
         </SwiperSlide>
 
@@ -127,6 +139,9 @@ const Portfolio = () => {
         link = ''
         title = 'Ugi Stelmokaitis'
         description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+        stack1 = {<HtmlIcon />} 
+        stack2 = {<ReactIcon />}
+        stack3 = {<TailwindIcon />}
         />
         </SwiperSlide>
 

@@ -5,6 +5,7 @@ import { ReactIcon } from './Icons/React_Icon'
 import { TailwindIcon } from './Icons/Tailwind_Icon'
 import {motion} from 'framer-motion'
 import arrowlink from '../assets/arrowLink.svg'
+import { Javascript } from './Icons/JavaScript'
 
 const Portfolio_Components = (props) => {
   return (
@@ -23,6 +24,7 @@ const Portfolio_Components = (props) => {
         <div className='flex  space-x-3 pt-5 items-center'>
         <p className=' font-bold text-lg lg:text-2xl items-center'>Tech Stack:</p>
         <div className='flex space-x-1'>
+          <Javascript />
           <HtmlIcon />
           <ReactIcon /> 
           <TailwindIcon />
