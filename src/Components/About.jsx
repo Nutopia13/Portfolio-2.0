@@ -45,7 +45,7 @@ const About = () => {
   };
   
   return (
-    <div className='mx-auto  lg:max-h-[120vh]  about_inner bg-[120%] bg-center bg-pink'>
+    <div className='mx-auto  lg:min-h-[120vh]  about_inner bg-[120%] bg-center bg-pink'>
       <div className=' flex m-auto overflow-x-hidden flex-wrap md:ml-10 md:space-x-10 md:justify-around lg:max-w-[1500px] md:max-w-[700px] items-center max-w-[370px] justify-center'>
         <motion.img 
         variants={imgVariants}
@@ -86,7 +86,7 @@ viewport={{ once: true }}
       </motion.div>
       </div>
       <div className='w-full flex relative top-20 lg:top-72 items-center justify-end'>
-        <img loading="lazy" src={lighting} className =  'lg:relative bottom-32 lg:min-w-[232px] lg:min-h-[371px] max-w-[72px] mr-14 h-[116px] z-50' />
+        <img loading="lazy" src={lighting} className =  'lg:hidden bottom-32 lg:min-w-[232px] lg:min-h-[371px] max-w-[72px] mr-14 h-[116px] z-50' /> 
       </div>
 
     </div>

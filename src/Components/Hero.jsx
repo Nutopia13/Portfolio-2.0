@@ -111,7 +111,11 @@ const Hero = () => {
       
     
         </div>
-        <img src={spiral} alt="" className='spiral lg:hidden md:hidden max-w-[594px] relative bottom-20 right-[14%] z-20'/>
+          <motion.img 
+          initial = {{opacity:0}}
+          animate = {{opacity: 1}}
+          src={spiral} alt="" className='spiral lg:hidden md:hidden max-w-[594px] relative bottom-20 right-[14%] z-20'/>
+        
         <TextScroller />
 
       

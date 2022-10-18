@@ -1,6 +1,7 @@
 import React from 'react'
 import spiral_contact from '../assets/Spiral_Contact.svg'
 import email from '../assets/email.svg'
+import Dots from './Dots';
 
 const Contact = () => {
 
@@ -62,6 +63,7 @@ const Contact = () => {
       <span className='font-oswald lg:text-xl text-[#13CE66]'>{result}</span>
       </div>
       </div>
+    
 
       <h3 className='contact_foot lg:hidden md:hidden mt-16 bg-pink text-white py-2 font-bold text-center uppercase'>- Let's Work Together - </h3>
       <h3 className='contact_foot--lg text-white py-4 relative z-20 font-bold bg-pink text-center uppercase mt-16 hidden md:hidden lg:block'>Let's Work Together - Let's Work Together - Let's Work Together </h3>

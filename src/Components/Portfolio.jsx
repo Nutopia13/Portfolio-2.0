@@ -1,7 +1,7 @@
 import React from 'react'
 import Portfolio_Component_Mob from './Portfolio_Component_Mob'
 import data from '../data'
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,6 +17,25 @@ import TicTacToe from './Tic -Tac-Toe/TicTacToe';
   
 
 const Portfolio = () => {
+
+  const portTextVariants = {
+    offscreen: {
+      x: -200,
+      opacity: 0
+      
+    
+    },
+    onscreen_hello: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.7,
+        duration: 3
+      }
+    }
+  }
+  
 
   const [weatherButtonPop, setWeatherbuttonPop] = useState(false)
   const [ticButtonPop, setTicButtonPop] = useState(false)
@@ -40,7 +59,12 @@ const Portfolio = () => {
       <Weather trigger={weatherButtonPop} setTrigger = {setWeatherbuttonPop} />
       <TicTacToe trigger={ticButtonPop} setTrigger = {setTicButtonPop}/>
       <div className='lg:pt-32 pt-16'>
-        <div className='flex items-center'>
+        <motion.div
+        variants={portTextVariants}
+        initial="offscreen"
+        whileInView="onscreen_hello"
+        viewport={{ once: true }}
+         className='flex items-center'>
           <h2 className='m-auto md:text-left md:max-w-[436px] md:ml-12 lg:ml-32 lg:max-w-[765px] max-w-[333px] portfolio_title'>Why people love <br/>
           <span className='text-bright_yellow'>my work </span></h2>
           <div className='flex relative md:right-28 md:space-x-5 lg:space-x-10 lg:right-24'>
@@ -53,12 +77,10 @@ const Portfolio = () => {
           whileTap={{ scale: 0.9 }}
           src={tic} onClick ={() => setTicButtonPop(true)} alt="" className='cursor-pointer hidden md:block md:max-w-[50px] lg:max-w-[80px]' />
           </div>
-        </div>
+        </motion.div>
         
     
-        <div
-       
-        className='hidden progress-bar overflow-x-scroll md:flex m-auto port_cont--slide  max-w-[350px] md:max-w-[750px] lg:max-w-full flex-row  lg:pt-16 pt-16'>
+        <div className='hidden progress-bar overflow-x-scroll md:flex m-auto port_cont--slide  max-w-[350px] md:max-w-[750px] lg:max-w-full flex-row  lg:pt-16 pt-16'>
         {cards}
         </div>
         <Swiper

@@ -8,6 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import Skills_Mob from './Skills_Mob'
+import Dots from './Dots'
 
 
 const Skills = () => {
@@ -28,7 +29,25 @@ const Skills = () => {
         bounce: 0.7,
         duration: 2
       }
-    }
+    },
+
+    offscreen_dots: {
+      x: 100,
+      opacity: 0
+      
+    
+    },
+    onscreen_dots: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        delay: 3,
+        bounce: 0.7,
+        duration: 2
+      }
+    },
+
   };
 
   const skill_card = data.skills.map(item => {
@@ -43,10 +62,24 @@ const Skills = () => {
 })
   return (
     <div className='bg-blue1 skills  lg:pt-24 pt-16 lg:pb-36 pb-14'>
+      <motion.div 
+      variants={skillsVariants}
+      initial= 'offscreen_dots'
+      whileInView = 'onscreen_dots'
+      viewport={{ once: true }}
+      className='min-w-full cursor-move hidden lg:flex relative top-44 justify-end'>
+        <Dots />
+      </motion.div>
       <img loading="lazy" src={check} alt="" className=' relative w-full h-full lg:bottom-28 bottom-16 overflow-hidden' />
-      <div className='text-white text-center lg:text-left mt-10'>
+      <motion.div 
+        variants={skillsVariants}
+
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+      className='text-white text-center lg:text-left mt-10'>
         <h2 className='lg:ml-32 skills_title font-bold font-oswald md:text-6xl lg:text-[90px] text-4xl'>My <span className='text-bright_yellow'>Skills</span></h2>
-      </div>
+      </motion.div>
       <Swiper
         className='mySwiper max-w-full min-h-[450px] flex justify-center mx-auto md:hidden skills_cont--slide'
         slidesPerView={1}
@@ -81,10 +114,10 @@ const Skills = () => {
         </SwiperSlide>
 </Swiper>
       <motion.div 
-      variants={skillsVariants}
-
-      initial="offscreen"
-      whileInView="onscreen"
+      
+      initial= {{opacity:0}}
+      whileInView = {{opacity: 1}}
+      transition = {{duration: 2}}
       viewport={{ once: true }}
 
       className='hidden md:flex justify-center flex-wrap items-center lg:space-x-12 md:space-x-7 space-x-3'>

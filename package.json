@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@popmotion/popcorn": "^0.4.4",
     "framer-motion": "^7.5.1",
     "matter-js": "^0.18.0",
     "popmotion": "^11.0.5",
