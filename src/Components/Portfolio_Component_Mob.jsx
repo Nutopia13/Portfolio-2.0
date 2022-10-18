@@ -15,7 +15,7 @@ const Portfolio_Component_Mob = (props) => {
         <a target = '_blank' href={props.link}><img loading="lazy" src={props.image} alt="" className='w-full h-full' /></a>
       </div>
       <div className='port_text--cont max-w-[340px] font-oswald pt-8 text-dark_blue text-left '>
-      <div className='flex gap-4 items-center '>
+      <div className='flex space-x-4 items-center '>
         <h3 className='port_card--title lg:text-4xl underline'><a target='_blank' href={props.link}>{props.title}</a></h3>
         <a className='min-w-[8%]' target="_blank" href={props.link}><img src={arrowlink} alt="" /></a>
       </div>

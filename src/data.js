@@ -58,9 +58,9 @@ export default {
 
     {
         id: 3,
-        image: '',
-        title: 'Ugi Stelmokaitis',
-        link: '',
+        image: '/MakerPreLaunch.png',
+        title: 'Maker Pre-launch',
+        link: 'https://golden-meerkat-82b114.netlify.app/',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     },
 

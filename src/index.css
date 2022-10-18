@@ -420,97 +420,12 @@ letter-spacing: 1px;
 text-transform: uppercase;
 }
 
-
-/* Weather Widget */
-
-.weather{
-  min-height: 100vh;
-  background-image: url('./assets/pattern.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.current_weather { 
-
-  width: 300px;
-  border-radius: 6px;
-  color: #06283D ;
-  background-color: bisque;
-  margin: 40px auto 0 auto;
-  padding: 0 20px 20px 20px;
-}
-
-.weather_container{
-  background-color: antiquewhite;
-}
-
-.top,
-.bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.city {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1;
-  margin: 0;
-  letter-spacing: 1px;
-}
-
-.weather-description {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1;
-  margin: 0;
-}
-
-.weather-icon {
-  width: 100px;
-}
-
-.temperature {
-  font-weight: 600;
-  font-size: 70px;
-  width: auto;
-  letter-spacing: -5px;
-  margin: 10px 0;
-}
-
-.details {
-  width: 100%;
-  padding-left: 20px;
-}
-
-.parameter-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.parameter-label {
-  text-align: left;
-  font-weight: 400;
-  font-size: 12px;
-}
-
-.parameter-value {
-  text-align: right;
-  font-weight: 600;
-  font-size: 12px;
-}
-
-.parameter-label.top {
-  border-bottom: 1px solid #fff;
-}
-
-
-
-
 .img_cont{
   border: 4px solid #06283D;
 transform: rotate(-2deg);
 }
+
+
 
 /* SwiperJS Navigation Customization */
 
@@ -557,6 +472,195 @@ transform: rotate(-2deg);
 
 .swiper-button-prev::after{
   content: url('/src/assets/Left_arrow.svg') !important;
+}
+
+
+/* Weather Widget */
+
+.weather{
+  min-height: 150vh;
+  background-image: url('./assets/pattern.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.current_weather { 
+  width: 300px;
+  border-radius: 6px;
+  color: #06283D ;
+  background-color: bisque;
+  margin: auto;
+  padding: 0 20px 20px 20px;
+}
+
+.weather_container{
+  background-color: antiquewhite;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.weather-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+}
+
+.weather-icon {
+  width: 110px;
+}
+
+.temperature {
+  font-weight: 600;
+  font-size: 70px;
+  width: auto;
+  letter-spacing: -5px;
+  margin: 10px 0;
+}
+
+.details {
+  width: 100%;
+  padding-left: 20px;
+}
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.parameter-label {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.parameter-value {
+  text-align: right;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.parameter-label.top {
+  border-bottom: 1px solid #fff;
+}
+
+
+/* TicTacToe Widget */
+
+
+
+  .tictac {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./assets/doodleNotebook.jpg);
+    margin: 0;
+    width: 100vw;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tictac_container{
+    margin-top: 50px;
+  }
+ 
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  place-items: center;
+  justify-content: center;
+}
+
+.box {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10%;
+  box-shadow: 0px 0px 8px #888888;
+  width: 5rem;
+  height: 5rem;
+  text-align: center;
+  font-size: 5em;
+  font-family: "Fredoka", sans-serif;
+  font-weight: bold;
+  line-height: 5rem;
+  margin: 0.5rem;
+}
+
+.x {
+  color: rgb(255, 70, 37);
+}
+
+.o {
+  color: rgb(44, 135, 255);
+}
+
+.box:hover {
+  box-shadow: 0px 0px 15px #888888;
+}
+
+.reset-btn {
+  border: none;
+  border-radius: 0.5rem;
+  background-color: rgb(0, 110, 255);
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  display: block;
+}
+
+.reset-btn:hover {
+  background-color: rgb(0, 119, 255);
+}
+
+.scoreboard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20rem;
+  font-size: 1.5rem;
+  background-color: white;
+  margin: 4rem 3rem;
+  box-shadow: 0px 0px 8px #888888;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+
+.score {
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+.x-score {
+  color: rgb(255, 70, 37);
+  border-bottom: 5px solid rgb(255, 70, 37);
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+}
+
+.o-score {
+  color: rgb(44, 135, 255);
+  border-bottom: 5px solid rgb(44, 135, 255);
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+}
+
+.inactive {
+  border-bottom: 5px solid transparent;
 }
 
 

@@ -1,11 +1,11 @@
 import React from 'react'
 import CurrentWeather from './CurrentWeather';
-import { WEATHER_API_URL, WEATHER_API_KEY } from "../API";
+import { WEATHER_API_URL, WEATHER_API_KEY } from "../../API";
 import Search from './Search'
 import { useState } from "react";
-import umbrella from '../assets/umbrella.svg'
-import read from '../assets/read.svg'
-import close from '../assets/close.svg'
+import umbrella from '../../assets/umbrella.svg'
+import read from '../../assets/read.svg'
+import close from '../../assets/Icons/close.svg'
 import { motion } from "framer-motion"
 
 const Weather = (props) => {
@@ -31,7 +31,7 @@ const Weather = (props) => {
   const weatherVariants = {
     offscreen: {
       y: -200,
-      opacity: 0
+   
       
     
     },
@@ -41,11 +41,12 @@ const Weather = (props) => {
       transition: {
         type: "spring",
         bounce: 0.7,
-        duration: 3
+        duration: 3,
       }
     },
     offscreen_bg:{
       opacity: 0
+
 
     },
 
@@ -61,6 +62,7 @@ const Weather = (props) => {
     initial="offscreen_bg"
     whileInView="onscreen_bg"
     viewport={{ once: true }} 
+    
 
     className='absolute weather z-50  hidden md:block'>
         <motion.div
@@ -69,14 +71,17 @@ const Weather = (props) => {
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true }} 
-        className='mx-auto mt-7 relative rounded-2xl weather_container max-w-[1000px] h-2/3 bg-white'>
-          <div className='flex justify-between'>
+        className='mx-auto mt-7 relative rounded-2xl weather_container max-h-[500px] md:max-w-[600px] lg:max-w-[1000px] h-2/3 bg-white'>
+          <div className='flex  justify-between'>
             <Search onSearchChange={handleOnSearchChange} />
-             <img src={close} className='max-w-[10%] mr-12' alt="" onClick = {() => props.setTrigger(false)} />
+             <motion.img
+             whileHover={{ scale: 1.1 }}
+             whileTap={{ scale: 0.9 }}
+              src={close} className='max-w-[10%] cursor-pointer mr-12 mt-6' alt="" onClick = {() => props.setTrigger(false)} />
           </div>
             
 
-            <div className='flex absolute top-72 max-w-[980px] mx-auto justify-between items-center'>
+            <div className='flex absolute md:top-80 lg:top-72 max-w-[980px] mx-auto justify-around space-x-72 items-end'>
               <img src={umbrella} alt="" className='w-[20%]' />
               <img src={read} alt="" className='w-[20%]' />
             </div>
@@ -84,6 +89,7 @@ const Weather = (props) => {
         </motion.div>
         {props.children}
     </motion.div>
+    
     
   ) : '';
 }

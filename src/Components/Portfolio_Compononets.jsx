@@ -11,11 +11,11 @@ const Portfolio_Components = (props) => {
 
     <div className='flex flex-col flex-wrap'>
     <div className='lg:ml-28 md:ml-6 lg:min-w-[478px] min-w-[338px] pb-8 pl-5 flex flex-wrap flex-col'>
-      <div className='img_cont  drop-shadow-lg w-[460px] h-[300px]'>
-        <a target = '_blank' href={props.item.link}><img loading="lazy" src={props.item.image} alt="" className='w-full port_img h-full' /></a>
+      <div className='img_cont  drop-shadow-lg w-[460px] bg-contain h-[300px]'>
+        <a target = '_blank' href={props.item.link}><img loading="lazy" src={props.item.image} alt="" className=' w-full port_img h-full' /></a>
       </div>
       <div  className='port_text--cont md:max-w-[300px] lg:max-w-[400px] max-w-[340px] font-oswald lg:pt-10 pt-6 text-dark_blue text-left '>
-        <div className='flex gap-4 items-center '>
+        <div className='flex space-x-4 items-center '>
         <h3 className='port_card--title lg:text-4xl underline'><a  target="_blank" href={props.item.link}>{props.item.title}</a></h3>
         <a className='min-w-[8%]' target="_blank" href={props.item.link}><img src={arrowlink} alt="" /></a>
         </div>
