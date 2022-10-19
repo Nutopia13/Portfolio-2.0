@@ -1,12 +1,8 @@
 import React from 'react'
-import { HtmlIcon } from './Icons/HTML'
 import arrowlink from '../assets/arrowLink.svg'
-import { ReactIcon } from './Icons/React_Icon'
-import { TailwindIcon } from './Icons/Tailwind_Icon'
-import { Javascript } from './Icons/JavaScript'
+
 
 const Portfolio_Component_Mob = (props) => {
-  const [Javascript, setJavascript] = React.useState(false)
 
 
   return (
