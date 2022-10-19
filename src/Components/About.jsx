@@ -78,11 +78,13 @@ viewport={{ once: true }}
               <p className=' about_p lg:text-2xl lg:max-w-[580px] max-w-[310px] text-base pb-[36px] px-[20px] pt-[25px] lg:px-11 text-left font-oswald'>I focus on frontend, backend, and architecture. Always try to build things easy, stable and scalable. Currently, I'm looking for a great opportunity where I can use my skillset to build customer-focused products on the frontend. When I'm not crunching through code, I'm out at a start-up pitch or exploring the world.</p>
             </div>
           
-          <motion.button
-    whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.9 }}>
-          <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><button className='lg:left-14 lg:text-[30px] text-lg font-oswald text-dark_blue font-bold btn2 py-2 px-5 relative bottom-6 left-7 lg:px-10 hover:shadow-none ease-in  duration-75 lg:py-5 uppercase bg-azra'>Resume</button></a>
-          </motion.button>
+          
+    
+          <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+           className='lg:left-14 lg:text-[30px] text-lg font-oswald text-dark_blue font-bold btn2 py-2 px-5 relative bottom-6 left-7 lg:px-10 hover:shadow-none ease-in  duration-75 lg:py-5 uppercase bg-azra'>Resume</motion.button></a>
+          
       </motion.div>
       </div>
       <div className='w-full flex relative top-20 lg:top-72 items-center justify-end'>

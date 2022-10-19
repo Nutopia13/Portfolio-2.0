@@ -41,11 +41,13 @@ const Navbar = () => {
             <li><a href="#contact">Contact</a></li>
            
           </ul>
-          <motion.button
-    whileHover={{ scale: 1.1 }}
-    whileTap={{ scale: 0.9 }}>
-       <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><button className='btn1 hidden hover:shadow-none ease-in  duration-75  md:block lg:block font-bold text-sm lg:text-lg bg-bright_yellow py-2.5 px-6 lg:py-4 lg:px-9'>Resume</button></a>
-        </motion.button>
+          
+   
+       <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><motion.button
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+        className='btn1 hidden hover:shadow-none ease-in  duration-75  md:block lg:block font-bold text-sm lg:text-lg bg-bright_yellow py-2.5 px-6 lg:py-4 lg:px-9'>Resume</motion.button></a>
+    
         </div>
         
       </motion.nav>
