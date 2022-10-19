@@ -123,7 +123,7 @@ const Portfolio = () => {
 
         <SwiperSlide>
         <Portfolio_Component_Mob
-        image = 'public\MakePreLaunch.avif'
+        image = '/MakePreLaunch.avif'
         link = 'https://golden-meerkat-82b114.netlify.app/'
         title = 'Maker Pre-launch'
         description = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
