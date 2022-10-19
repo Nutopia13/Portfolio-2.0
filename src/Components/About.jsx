@@ -80,7 +80,7 @@ viewport={{ once: true }}
           
           
     
-          <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><motion.button
+          <a download href="\Nechytailo_Vladyslav_CV.pdf"><motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
            className='lg:left-14 lg:text-[30px] text-lg font-oswald text-dark_blue font-bold btn2 py-2 px-5 relative bottom-6 left-7 lg:px-10 hover:shadow-none ease-in  duration-75 lg:py-5 uppercase bg-azra'>Resume</motion.button></a>

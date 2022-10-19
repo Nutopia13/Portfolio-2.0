@@ -33,7 +33,7 @@ const NavPopUp = (props) => {
             <li><a href="#skill">Skill</a></li>
             <li><a href="#portfolio">Project</a></li>
             <li className='pb-[42px]'><a href="#">Contact</a></li>
-            <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><button className='btn1 hover:shadow-none ease-in  duration-75  md:block font-bold text-xl bg-bright_yellow py-3 px-8'>Resume</button></a>
+            <a download href="\Nechytailo_Vladyslav_CV.pdf"><button className='btn1 hover:shadow-none ease-in  duration-75  md:block font-bold text-xl bg-bright_yellow py-3 px-8'>Resume</button></a>
             
         </ul>
         
