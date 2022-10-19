@@ -1,12 +1,14 @@
 import React from 'react'
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import menu from '../assets/HambMenu.svg'
 import logoMob from '../assets/LogoMob.svg'
-import NavPopUp from './NavPopUp'
 import {useState} from 'react'
+import { CircleClose } from './Icons/Close';
 
 const Navbar = () => {
-  const [buttonPop, setbuttonPop] = useState(false)
+
+  const [isOpen, setIsOpen] = useState(true);
+
    return (
     <div className='bg-white relative z-50 m-auto border-b-2 border-dark_blue border-solid'>
       <motion.nav 
@@ -28,9 +30,52 @@ const Navbar = () => {
       
         <img src={logoMob} alt="" className='lg:min-w-[305px]' />
         <div className='md:hidden lg:hidden'>
-          <img onClick ={() => setbuttonPop(true)} src={menu} alt="Navigation Menu" />
+
+          <img onClick={() => setIsOpen(!isOpen)} src={menu} alt="Navigation Menu" />
         </div>
-        <NavPopUp trigger={buttonPop} setTrigger = {setbuttonPop} />
+
+        <AnimatePresence>
+        {!isOpen && ( 
+        <motion.div className='lg:hidden md:hidden popup flex justify-center fixed z-50 -top-1'>
+      <motion.div
+
+       initial={{
+        x: 200,
+        opacity: 0,
+
+      }}
+      animate={{
+        x: 0,
+        opacity: 1,
+      }}
+
+
+      whileInView={{opacity: 1}}
+      transition={{duration: 0.3}}
+      viewport = {{ones:true}}
+      exit = {{x:300, opacity: 0}}
+      className='popup'>
+      <ul 
+      className=' pb-[42px] flex justify-center flex-wrap stroke pop-list bg-white text-center px-[158px] font-bold text-2xl font-oswald  '>
+  
+        <CircleClose onClick={() => setIsOpen(!isOpen)}  className='close_popUp relative left-32 top-4' />
+        
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#portfolio">Project</a></li>
+            <li className='pb-[42px]'><a href="#">Contact</a></li>
+            <a download href="\Nechytailo_Vladyslav_CV.pdf"><button className='btn1 hover:shadow-none ease-in  duration-75  md:block font-bold text-xl bg-bright_yellow py-3 px-8'>Resume</button></a>
+            
+        </ul>
+        
+      </motion.div>
+    </motion.div>
+  )}
+
+</AnimatePresence>
+
+        
         <div 
         className='hidden md:flex lg:flex lg:justify-between md:items-center gap-12'>
           <ul className='stroke flex justify-center gap-6 font-bold text-sm lg:text-xl'>

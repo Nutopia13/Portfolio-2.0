@@ -6,10 +6,10 @@ import { useState } from "react";
 import umbrella from '../../assets/umbrella.svg'
 import read from '../../assets/read.svg'
 import close from '../../assets/Icons/close.svg'
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion";
 
-const Weather = (props) => {
-
+const Weather = () => {
+  const [isOpenWeather, setIsOpenWeather] = useState(true);
    const [currentWeather, setCurrentWeather] = useState(null);
 
   const handleOnSearchChange = (searchData) => {
@@ -56,7 +56,9 @@ const Weather = (props) => {
   };
 
     
-  return (props.trigger) ? (
+  return( 
+    <AnimatePresence>
+    {isOpenWeather && (
     <motion.div 
     variants={weatherVariants}
     initial="offscreen_bg"
@@ -77,7 +79,7 @@ const Weather = (props) => {
              <motion.img
              whileHover={{ scale: 1.1 }}
              whileTap={{ scale: 0.9 }}
-              src={close} className='max-w-[10%] cursor-pointer mr-12 mt-6' alt="" onClick = {() => props.setTrigger(false)} />
+              src={close} onClick={() => setIsOpenWeather(!isOpenWeather)} className='max-w-[10%] cursor-pointer mr-12 mt-6' alt=""  />
           </div>
             
 
@@ -87,11 +89,13 @@ const Weather = (props) => {
             </div>
             {currentWeather && <CurrentWeather data={currentWeather} />}
         </motion.div>
-        {props.children}
+  
     </motion.div>
     
     
-  ) : '';
+  )}
+  </AnimatePresence>
+  );
 }
 
 export default Weather

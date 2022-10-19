@@ -1,11 +1,13 @@
 import React from 'react'
 import Game from './Game';
 import close from '../../assets/Icons/close2.svg'
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from "framer-motion";
+import {useState} from 'react'
 
 
 
-const TicTacToe = (props) => {
+const TicTacToe = () => {
+  const [isOpenTicTacToe, setIsOpenTicTacToe] = useState(true);
 
     const ticVariants = {
 
@@ -20,8 +22,9 @@ const TicTacToe = (props) => {
       }
     };
                 
-     return (props.trigger) ? (
-       
+     return (
+      <AnimatePresence>
+      {isOpenTicTacToe && (
     <motion.div
     variants={ticVariants}
     initial="offscreen_bg"
@@ -33,13 +36,15 @@ const TicTacToe = (props) => {
         <motion.img 
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        src={close} className='cursor-pointer max-w-[40px] mt-2 mr-6 absolute' alt="" onClick = {() => props.setTrigger(false)} />
+        src={close} onClick={() => setIsOpenTicTacToe(!setIsOpenTicTacToe)} className='cursor-pointer max-w-[40px] mt-2 mr-6 absolute' alt=""  />
          <Game />
          </div>
-         {props.children}
+        
      </motion.div>
 
-     ) : '';
+     )}
+     </AnimatePresence>
+     );
  }
 
  export default TicTacToe

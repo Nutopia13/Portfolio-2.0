@@ -1,7 +1,7 @@
 import React from 'react'
 import Portfolio_Component_Mob from './Portfolio_Component_Mob'
 import data from '../data'
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -20,6 +20,9 @@ import { Javascript } from './Icons/JavaScript';
   
 
 const Portfolio = () => {
+
+  const [isOpenWeather, setIsOpenWeather] = useState(true);
+  const [isOpenTicTacToe, setIsOpenTicTacToe] = useState(true);
 
   const portTextVariants = {
     offscreen: {
@@ -40,8 +43,6 @@ const Portfolio = () => {
   }
   
 
-  const [weatherButtonPop, setWeatherbuttonPop] = useState(false)
-  const [ticButtonPop, setTicButtonPop] = useState(false)
 
     const cards = data.portfolio.map(item => {
         return (
@@ -59,8 +60,10 @@ const Portfolio = () => {
   
     
     <div className='bg-center  md:pb-32 pb-8'>
-      <Weather trigger={weatherButtonPop} setTrigger = {setWeatherbuttonPop} />
-      <TicTacToe trigger={ticButtonPop} setTrigger = {setTicButtonPop}/>
+
+      {!isOpenWeather && <Weather  />}
+      {!isOpenTicTacToe && <TicTacToe />}
+  
       <div className='lg:pt-32 pt-16'>
         <motion.div
         variants={portTextVariants}
@@ -74,11 +77,11 @@ const Portfolio = () => {
           <motion.img 
           whileHover={{ scale: 1.4 }}
           whileTap={{ scale: 0.9 }}
-          src={sun} onClick ={() => setWeatherbuttonPop(true)} alt=""  className='cursor-pointer hidden md:block md:max-w-[50px] lg:max-w-[80px]'/>
+          src={sun}  onClick={() => setIsOpenWeather(!isOpenWeather)} alt=""  className='cursor-pointer hidden md:block md:max-w-[50px] lg:max-w-[80px]'/>
           <motion.img 
           whileHover={{ scale: 1.4 }}
           whileTap={{ scale: 0.9 }}
-          src={tic} onClick ={() => setTicButtonPop(true)} alt="" className='cursor-pointer hidden md:block md:max-w-[50px] lg:max-w-[80px]' />
+          src={tic} onClick={() => setIsOpenTicTacToe(!setIsOpenTicTacToe)} alt="" className='cursor-pointer hidden md:block md:max-w-[50px] lg:max-w-[80px]' />
           </div>
         </motion.div>
         
