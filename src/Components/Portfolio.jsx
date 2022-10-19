@@ -83,7 +83,7 @@ const Portfolio = () => {
         </motion.div>
         
     
-        <div className='hidden progress-bar overflow-x-scroll md:flex m-auto port_cont--slide  max-w-[350px] md:max-w-[750px] lg:max-w-full flex-row  lg:pt-16 pt-16'>
+        <div className='hidden progress-bar overflow-x-scroll md:flex m-auto port_cont--slide max-w-full flex-row  pt-16'>
         {cards}
         </div>
         <Swiper

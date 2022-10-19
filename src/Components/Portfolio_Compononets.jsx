@@ -18,7 +18,7 @@ const Portfolio_Components = (props) => {
       <div  className='port_text--cont md:max-w-[300px] lg:max-w-[400px] max-w-[340px] font-oswald lg:pt-10 pt-6 text-dark_blue text-left '>
         <div className='flex space-x-4 items-center '>
         <h3 className='port_card--title lg:text-4xl underline'><a  target="_blank" href={props.item.link}>{props.item.title}</a></h3>
-        <a className='min-w-[8%]' target="_blank" href={props.item.link}><img src={arrowlink} alt="" /></a>
+        <a className='w-[8%]' target="_blank" href={props.item.link}><img src={arrowlink} alt="" /></a>
         </div>
         <p className='pt-3 lg:5 text-base md:min-h-[90px] lg:min-h-[140px] lg:text-2xl opacity-70'>{props.item.description}</p>
         <div className='flex  space-x-3 pt-5 items-center'>

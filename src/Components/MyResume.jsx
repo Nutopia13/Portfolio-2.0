@@ -10,7 +10,7 @@ const MyResume = () => {
     <div>
     <div>
       <div className='mt-[30px] z-30 lg:mt-20'>
-        <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><img src={arrow} alt="" className='z-30 relative checkout max-w-[104px] lg:max-w-[200px] md:max-w-[91px]'/></a>
+        <a target='_blank' href="\Nechytailo_Vladyslav_CV.pdf"><img src={arrow} alt="" className='z-30 relative checkout w-[104px] lg:w-[200px] md:w-[91px]'/></a>
       </div>
      
 

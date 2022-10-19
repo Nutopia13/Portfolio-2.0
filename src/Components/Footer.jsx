@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className='lg:max-w-[1200px] m-auto pt-10 pb-10'>
       <div className='lg:hidden md:hidden space-y-9 flex flex-wrap  justify-center'>
-        <img src={logoMob} alt="Logo" className='lg:min-w-[305px]' />
+        <img src={logoMob} alt="Logo" className='w-[305px]' />
         <ul className='stroke flex uppercase justify-center space-x-4  flex-wrap font-bold text-sm lg:text-xl'>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -49,7 +49,7 @@ const Footer = () => {
       </div>
 
       <div className=' hidden lg:hidden md:grid grid-cols-3 items-center max-w-[700px] m-auto'>
-        <img src={logoMob} loading="lazy"  alt="Logo" className='lg:min-w-[305px]' />
+        <img src={logoMob} loading="lazy"  alt="Logo" className='w-[305px]' />
         <div className='flex space-x-12'>
         <ul className='stroke flex uppercase justify-center space-x-4 font-bold text-sm'>
             <li><a href="#hero">Home</a></li>
