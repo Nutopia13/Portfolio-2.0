@@ -44,7 +44,7 @@ export default {
   portfolio: [
     {
       id: 1,
-      image: "/Earth_2.png",
+      image: "/Earth_2.0.avif",
       title: "Earth 2.0",
       link: "https://nutopia13.github.io/Earth-2.0/",
       description:
