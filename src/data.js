@@ -53,7 +53,7 @@ export default {
 
     {
       id: 2,
-      image: "/Design_Agency.png",
+      image: "/Design_Agency.avif",
       title: "Design Agency",
       link: "https://inspiring-eclair-76217d.netlify.app/",
       description:
@@ -62,7 +62,7 @@ export default {
 
     {
       id: 3,
-      image: "/MakerPreLaunch.png",
+      image: "/MakePreLaunch.avif",
       title: "Maker Pre-launch",
       link: "https://golden-meerkat-82b114.netlify.app/",
       description:
