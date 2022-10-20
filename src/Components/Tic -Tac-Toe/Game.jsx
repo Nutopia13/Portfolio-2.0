@@ -93,10 +93,6 @@ const Game = (props) => {
 
   return (
     <motion.div
-    variants={boxVariants}
-    initial="offscreen"
-    whileInView="onscreen"
-    viewport={{ once: true }}
     className = 'bg-dark_blue rounded-t-2xl' >
       
       <ScoreBoard scores={scores} xPlaying={xPlaying} />

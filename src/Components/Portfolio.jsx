@@ -81,7 +81,7 @@ const Portfolio = () => {
           <motion.img 
           whileHover={{ scale: 1.4 }}
           whileTap={{ scale: 0.9 }}
-          src={tic} onClick={() => setIsOpenTicTacToe(!setIsOpenTicTacToe)} alt="" className='cursor-pointer hidden md:block md:max-w-[50px] lg:max-w-[80px]' />
+          src={tic} onClick={() => setIsOpenTicTacToe(!isOpenTicTacToe)} alt="" className='cursor-pointer hidden md:block md:max-w-[50px] lg:max-w-[80px]' />
           </div>
         </motion.div>
         

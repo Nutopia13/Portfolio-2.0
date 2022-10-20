@@ -60,6 +60,7 @@ const Weather = () => {
     <AnimatePresence>
     {isOpenWeather && (
     <motion.div 
+    exit={{opacity: 0}}
     variants={weatherVariants}
     initial="offscreen_bg"
     whileInView="onscreen_bg"
@@ -68,10 +69,11 @@ const Weather = () => {
 
     className='absolute weather z-50  hidden md:block'>
         <motion.div
-        variants={weatherVariants}
-
-        initial="offscreen"
-        whileInView="onscreen"
+        initial={{scale: 0}}
+        animate={{scale: 1}}
+        exit={{scale: 0, opacity: 0}}
+        transition ={{duration: 1}}
+        
         viewport={{ once: true }} 
         className='mx-auto mt-7 relative rounded-2xl weather_container max-h-[500px] md:max-w-[600px] lg:max-w-[1000px] h-2/3 bg-white'>
           <div className='flex  justify-between'>
