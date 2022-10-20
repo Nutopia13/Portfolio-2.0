@@ -1,9 +1,14 @@
 import * as React from "react";
-import { useState } from "react"
+import { useState } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import { distance } from "@popmotion/popcorn";
 
-const grid = [[0, 1, 2, 3], [4, 5, 6, 7], [8, 9, 10, 11], [12, 13, 14, 15]];
+const grid = [
+  [0, 1, 2, 3],
+  [4, 5, 6, 7],
+  [8, 9, 10, 11],
+  [12, 13, 14, 15],
+];
 const size = 40;
 const gap = 10;
 
@@ -16,14 +21,14 @@ const Square = ({ active, setActive, colIndex, rowIndex, x, y }) => {
   );
   const springConfig = {
     stiffness: Math.max(700 - d * 120, 0),
-    damping: 20 + d * 5
+    damping: 20 + d * 5,
   };
   const dx = useSpring(x, springConfig);
   const dy = useSpring(y, springConfig);
 
   return (
     <motion.div
-    className="border-4 border-dark_blue"
+      className="border-4 border-dark_blue"
       drag
       dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
       dragTransition={{ bounceStiffness: 500, bounceDamping: 20 }}
@@ -39,49 +44,42 @@ const Square = ({ active, setActive, colIndex, rowIndex, x, y }) => {
         borderRadius: "50%",
         x: isDragging ? x : dx,
         y: isDragging ? y : dy,
-        zIndex: isDragging ? 1 : 0
+        zIndex: isDragging ? 1 : 0,
       }}
     />
   );
 };
 
-
-
 const Dots = () => {
-
-    const skillsVariants = {
-     
-        offscreen_dots: {
-          x: 100,
-          opacity: 0
-          
-        
-        },
-        onscreen_dots: {
-          x: 0,
-          opacity: 1,
-          transition: {
-            type: "spring",
-            delay: 3,
-            bounce: 0.7,
-            duration: 2
-          }
-        },
-    
-      };
+  const skillsVariants = {
+    offscreen_dots: {
+      x: 100,
+      opacity: 0,
+    },
+    onscreen_dots: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        delay: 3,
+        bounce: 0.7,
+        duration: 2,
+      },
+    },
+  };
 
   const [active, setActive] = useState({ row: 0, col: 0 });
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
   return (
-    <motion.div 
-
-    variants={skillsVariants}
-    initial= 'offscreen_dots'
-    whileInView = 'onscreen_dots'
-    viewport={{ once: true }}
-    className="app right-24 absolute z-20 ">
+    <motion.div
+      variants={skillsVariants}
+      initial="offscreen_dots"
+      whileInView="onscreen_dots"
+      viewport={{ once: true }}
+      className="app right-24 absolute z-20 "
+    >
       <motion.div
         animate={{ "--base-hue": 360 }}
         initial={{ "--base-hue": 0 }}
@@ -97,7 +95,7 @@ const Dots = () => {
             left: "50%",
             transform: "translate(-50%, -50%)",
             position: "relative",
-            perspective: 500
+            perspective: 500,
           }}
         >
           {grid.map((row, rowIndex) =>
@@ -117,6 +115,6 @@ const Dots = () => {
       </motion.div>
     </motion.div>
   );
-}
+};
 
-export default Dots
+export default Dots;

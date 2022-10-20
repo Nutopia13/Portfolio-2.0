@@ -35,7 +35,7 @@ const Search = ({ onSearchChange }) => {
       value={search}
       onChange={handleOnChange}
       loadOptions={loadOptions}
-      className = 'min-w-[30%]'
+      className="min-w-[30%]"
     />
   );
 };
