@@ -39,8 +39,8 @@ const About = () => {
   };
 
   return (
-    <div className="mx-auto  lg:min-h-[120vh]  about_inner bg-[120%] bg-center bg-pink">
-      <div className=" flex m-auto overflow-x-hidden flex-wrap md:ml-10 md:space-x-10 md:justify-around lg:max-w-[1500px] md:max-w-[700px] items-center max-w-[370px] justify-center">
+    <div className="mx-auto  lg:min-h-[120vh]  about_inner bg-[100%] bg-center bg-pink">
+      <div className=" flex mx-auto overflow-x-hidden flex-wrap md:ml-10 md:space-x-10 md:justify-around lg:max-w-[1500px] md:max-w-[700px] items-center max-w-[370px] justify-center">
         <motion.img
           variants={imgVariants}
           initial="offscreen"
