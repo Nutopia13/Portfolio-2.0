@@ -13,12 +13,15 @@ const Portfolio_Components = (props) => {
       <div className="lg:ml-28 md:ml-6 lg:min-w-[478px] min-w-[338px] pb-8 pl-5 flex flex-wrap flex-col">
         <div className="img_cont  drop-shadow-lg w-[460px] bg-contain h-[300px]">
           <a target="_blank" href={props.item.link}>
-            <img
-              loading="lazy"
-              src={props.item.image}
-              alt=""
-              className=" w-full port_img h-full"
-            />
+            <picture>
+              <source srcSet={props.item.image} type="image/avif" />
+              <img
+                loading="lazy"
+                src={props.item.image}
+                alt=""
+                className=" w-full port_img h-full"
+              />
+            </picture>
           </a>
         </div>
         <div className="port_text--cont md:max-w-[300px] lg:max-w-[400px] max-w-[340px] font-oswald lg:pt-10 pt-6 text-dark_blue text-left ">

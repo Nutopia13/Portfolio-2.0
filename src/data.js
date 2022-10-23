@@ -42,7 +42,7 @@ export default {
   portfolio: [
     {
       id: 1,
-      image: "/Earth_2.0.avif",
+      image: "Earth_2.0.avif",
       title: "Earth 2.0",
       link: "https://nutopia13.github.io/Earth-2.0/",
       description:
@@ -51,7 +51,7 @@ export default {
 
     {
       id: 2,
-      image: "/Design_Agency.avif",
+      image: "Design_Agency.avif",
       title: "Design Agency",
       link: "https://inspiring-eclair-76217d.netlify.app/",
       description:
@@ -60,7 +60,7 @@ export default {
 
     {
       id: 3,
-      image: "/MakePreLaunch.avif",
+      image: "MakePreLaunch.avif",
       title: "Maker Pre-launch",
       link: "https://golden-meerkat-82b114.netlify.app/",
       description:
