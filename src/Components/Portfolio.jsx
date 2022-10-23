@@ -121,7 +121,7 @@ const Portfolio = () => {
 
           <SwiperSlide>
             <Portfolio_Component_Mob
-              image = '/MakerPrelaunch.png'
+              image = '/MakePreLaunch.png'
               imageAvif="MakePreLaunch.avif"
               link="https://golden-meerkat-82b114.netlify.app/"
               title="Maker Pre-launch"
