@@ -14,7 +14,7 @@ const Portfolio_Components = (props) => {
         <div className="img_cont  drop-shadow-lg w-[460px] bg-contain h-[300px]">
           <a target="_blank" href={props.item.link}>
             <picture>
-              <source srcSet={props.item.image} type="image/avif" />
+              <source srcSet={props.item.imageAvif} type="image/avif" />
               <img
                 loading="lazy"
                 src={props.item.image}

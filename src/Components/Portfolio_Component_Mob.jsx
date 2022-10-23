@@ -8,7 +8,7 @@ const Portfolio_Component_Mob = (props) => {
         <div className="img_cont drop-shadow-md w-[325px] h-[210px] bg-contain">
           <a target="_blank" href={props.link}>
             <picture>
-              <source srcSet={props.image} type="image/avif" />
+              <source srcSet={props.imageAvif} type="image/avif" />
               <img
                 loading="lazy"
                 src={props.image}
