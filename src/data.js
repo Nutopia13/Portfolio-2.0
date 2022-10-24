@@ -40,6 +40,16 @@ export default {
   ],
 
   portfolio: [
+
+    {
+      id: 4,
+      image: "/PlanetsScreen.png",
+      title: "The Planets",
+      link: "https://quiet-crepe-0ed89d.netlify.app/",
+      description:
+        "8-page fact site for all planets in our solar system. Built with React Routers.",
+    },
+
     {
       id: 1,
       imageAvif:"Earth_2.0.avif",
@@ -60,6 +70,7 @@ export default {
         "Design solutions made easy. Design Agency is a digital design-led agency mainly focused on Product Development.",
     },
 
+
     {
       id: 3,
       imageAvif: "MakePreLaunch.avif",
@@ -70,14 +81,6 @@ export default {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
 
-    {
-      id: 4,
-      image: "",
-      title: "Ugi Stelmokaitis",
-      link: "",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    },
 
     {
       id: 5,

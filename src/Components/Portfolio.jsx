@@ -17,6 +17,7 @@ import { ReactIcon } from "./Icons/React_Icon";
 import { TailwindIcon } from "./Icons/Tailwind_Icon";
 import { HtmlIcon } from "./Icons/HTML";
 import { Javascript } from "./Icons/JavaScript";
+import { ReactRouter } from "./Icons/ReactDom";
 
 const Portfolio = () => {
   const [isOpenWeather, setIsOpenWeather] = useState(true);
@@ -95,6 +96,19 @@ const Portfolio = () => {
         >
           <SwiperSlide>
             <Portfolio_Component_Mob
+              image = '/PlanetsScreen.png'
+              imageAvif="/PlanetsScreen.png"
+              link="https://quiet-crepe-0ed89d.netlify.app/"
+              title="The Planets"
+              description="8-page fact site for all planets in our solar system. Built with React Routers."
+              stack1={<ReactRouter />}
+              stack2={<ReactIcon />}
+              stack3={<TailwindIcon />}
+            />
+          </SwiperSlide>
+          
+          <SwiperSlide>
+            <Portfolio_Component_Mob
               image = '/Earth_2.0.png'
               imageAvif="Earth_2.0.avif"
               link="https://nutopia13.github.io/Earth-2.0/"
@@ -132,18 +146,7 @@ const Portfolio = () => {
             />
           </SwiperSlide>
 
-          <SwiperSlide>
-            <Portfolio_Component_Mob
-              image = ''
-              imageAvif=""
-              link=""
-              title="Ugi Stelmokaitis"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              stack1={<HtmlIcon />}
-              stack2={<ReactIcon />}
-              stack3={<TailwindIcon />}
-            />
-          </SwiperSlide>
+    
         </Swiper>
       </div>
     </div>
