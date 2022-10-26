@@ -36,7 +36,7 @@ const Navbar = () => {
 
         <AnimatePresence>
           {!isOpen && (
-            <motion.div className="lg:hidden md:hidden popup flex justify-center fixed z-50 -top-1">
+            <motion.div className="md:hidden popup flex justify-center fixed z-50 -top-1">
               <motion.div
                 initial={{
                   x: 200,
@@ -47,12 +47,12 @@ const Navbar = () => {
                   opacity: 1,
                 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.5 }}
                 viewport={{ ones: true }}
                 exit={{ x: 300, opacity: 0 }}
                 className="popup"
               >
-                <ul className=" pb-[42px] flex justify-center flex-wrap stroke pop-list bg-white text-center px-[158px] font-bold text-2xl font-oswald  ">
+                <ul className=" pb-[42px] flex justify-center items-center flex-col stroke pop-list bg-white text-center px-[158px] font-bold text-2xl font-oswald  ">
                   <CircleClose
                     onClick={() => setIsOpen(!isOpen)}
                     className="close_popUp relative left-32 top-4"
