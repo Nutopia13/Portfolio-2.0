@@ -47,12 +47,25 @@ const Navbar = () => {
                   opacity: 1,
                 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.4 }}
                 viewport={{ ones: true }}
                 exit={{ x: 300, opacity: 0 }}
                 className="popup"
               >
-                <ul className=" pb-[42px] flex justify-center items-center flex-col stroke pop-list bg-white text-center px-[158px] font-bold text-2xl font-oswald  ">
+                <motion.ul 
+                initial={{
+                  x: 200,
+                  opacity: 0,
+                }}
+                animate={{
+                  x: 0,
+                  opacity: 1,
+                }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.4, type: "spring", bounce: 0.3 }}
+                viewport={{ ones: true }}
+                exit={{ x: 300, opacity: 0 }}
+                className=" pb-[42px] flex justify-center items-center flex-col stroke pop-list bg-white text-center px-[158px] font-bold text-2xl font-oswald  ">
                   <CircleClose
                     onClick={() => setIsOpen(!isOpen)}
                     className="close_popUp relative left-32 top-4"
@@ -78,7 +91,7 @@ const Navbar = () => {
                       Resume
                     </button>
                   </a>
-                </ul>
+                </motion.ul>
               </motion.div>
             </motion.div>
           )}
