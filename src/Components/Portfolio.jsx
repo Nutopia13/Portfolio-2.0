@@ -100,7 +100,7 @@ const Portfolio = () => {
               imageAvif="/PlanetsScreen.png"
               link="https://quiet-crepe-0ed89d.netlify.app/"
               title="The Planets"
-              description="8-page fact site for all planets in our solar system. Built with React Routers."
+              description="Discover the universe with planet fact sites. Inspired by NASA's work, this project uses React and Routers to display information on all planets in our solar system."
               stack1={<ReactRouter />}
               stack2={<ReactIcon />}
               stack3={<TailwindIcon />}
@@ -126,7 +126,7 @@ const Portfolio = () => {
               imageAvif="Design_Agency.avif"
               link="https://inspiring-eclair-76217d.netlify.app/"
               title="Design Agency"
-              description="Design solutions made easy. Design Agency is a digital design-led agency mainly focused on Product Development."
+              description="From brand identity to web design, we create solutions that are simple, beautiful and function."
               stack1={<HtmlIcon />}
               stack2={<ReactIcon />}
               stack3={<TailwindIcon />}
@@ -135,11 +135,11 @@ const Portfolio = () => {
 
           <SwiperSlide>
             <Portfolio_Component_Mob
-              image = '/MakePreLaunch.png'
-              imageAvif="MakePreLaunch.avif"
-              link="https://golden-meerkat-82b114.netlify.app/"
-              title="Maker Pre-launch"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              image = '/MyTeam.png'
+              imageAvif="/MyTeam.png"
+              link="https://quiet-gumdrop-bd2ac4.netlify.app/"
+              title='My Team'
+              description="Yep, finding the right people and building high performing teams can be hard. But you don’t have to do it alone, and we’re here to change that."
               stack1={<HtmlIcon />}
               stack2={<ReactIcon />}
               stack3={<TailwindIcon />}

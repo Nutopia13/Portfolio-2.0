@@ -40,19 +40,18 @@ export default {
   ],
 
   portfolio: [
-
     {
       id: 4,
       image: "/PlanetsScreen.png",
       title: "The Planets",
       link: "https://quiet-crepe-0ed89d.netlify.app/",
       description:
-        "8-page fact site for all planets in our solar system. Built with React Routers.",
+        "Discover the universe with planet fact sites. Inspired by NASA's work, this project uses React and Routers to display information on all planets in our solar system.",
     },
 
     {
       id: 1,
-      imageAvif:"Earth_2.0.avif",
+      imageAvif: "Earth_2.0.avif",
       image: "/Earth_2.0.png",
       title: "Earth 2.0",
       link: "https://nutopia13.github.io/Earth-2.0/",
@@ -67,20 +66,18 @@ export default {
       title: "Design Agency",
       link: "https://inspiring-eclair-76217d.netlify.app/",
       description:
-        "Design solutions made easy. Design Agency is a digital design-led agency mainly focused on Product Development.",
+        "From brand identity to web design, we create solutions that are simple, beautiful and function",
     },
-
 
     {
       id: 3,
-      imageAvif: "MakePreLaunch.avif",
-      image: "/MakePreLaunch.png",
-      title: "Maker Pre-launch",
-      link: "https://golden-meerkat-82b114.netlify.app/",
+      imageAvif: "/MyTeam.png",
+      image: "/MyTeam.png",
+      title: "My Team",
+      link: "https://quiet-gumdrop-bd2ac4.netlify.app/",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Yep, finding the right people and building high performing teams can be hard. But you don’t have to do it alone, and we’re here to change that.",
     },
-
 
     {
       id: 5,
