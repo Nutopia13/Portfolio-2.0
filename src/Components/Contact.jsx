@@ -56,7 +56,7 @@ const Contact = () => {
           />
           <div className="flex flex-wrap space-y-4 md:space-y-0 md:space-x-2">
             <div className="first_input relative z-20">
-              <label for="name">Full Name</label>
+              <label htmlFor="name">Full Name</label>
               <input
                 required
                 className="Contact_Input"
@@ -67,7 +67,7 @@ const Contact = () => {
             </div>
 
             <div className="second_input relative z-20">
-              <label className="flex items-center justify-around " for="email">
+              <label className="flex items-center justify-around " htmlFor="email">
                 Email{" "}
                 <img
                   className="max-w-[25px] lg:max-w-[30px]"
@@ -86,7 +86,7 @@ const Contact = () => {
           </div>
 
           <div className="third_input relative z-20">
-            <label for="description">Describe your project</label>
+            <label htmlFor="description">Describe your project</label>
             <textarea
               required
               id="description"
