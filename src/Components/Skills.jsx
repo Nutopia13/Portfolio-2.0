@@ -47,7 +47,7 @@ const Skills = () => {
     return <Skills_Component key={item.id} item={item} />;
   });
   return (
-    <div className="bg-blue1 skills  lg:pt-24 pt-16 lg:pb-36 pb-14">
+    <div className="bg-blue1 relative overflow-hidden skills  lg:pt-24 pt-16 lg:pb-36 pb-14">
       <div className="min-w-full cursor-move hidden lg:flex relative top-44 justify-end">
         <Dots />
       </div>

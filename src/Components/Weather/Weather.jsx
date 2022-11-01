@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import CurrentWeather from "./CurrentWeather";
 import { WEATHER_API_URL, WEATHER_API_KEY } from "../../API";
 import Search from "./Search";
@@ -27,6 +28,8 @@ const Weather = () => {
       })
       .catch(console.log);
   };
+
+
 
   const weatherVariants = {
     offscreen: {
