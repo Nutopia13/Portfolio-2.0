@@ -81,14 +81,26 @@ transform: rotate(-2.82deg);
 
 
 
-.stroke li{
-  border-bottom: 0px solid black;
+.stroke a::after{
+  content: "";
+  position: absolute;
+  top: 2rem;
+  display: block;
+  height: 0.1em;
+  width: 0%;
+  background-color: black;
+  transition: all ease-in-out 250ms;
 }
 
-.stroke li:hover{
-  animation: ease-in ;
-  border-bottom: 2px solid black;
+
+.stroke a:hover::after {
+  width: 100%;
 }
+
+.stroke li{
+  position: relative;
+}
+
 
 /* Pop-Up */
 
