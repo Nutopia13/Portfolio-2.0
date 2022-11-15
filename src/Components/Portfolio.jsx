@@ -109,13 +109,13 @@ const Portfolio = () => {
           
           <SwiperSlide>
             <Portfolio_Component_Mob
-              image = '/Earth_2.0.png'
+              image = '/DevJobs2.png'
               imageAvif="Earth_2.0.avif"
-              link="https://nutopia13.github.io/Earth-2.0/"
-              title="Earth 2.0"
-              description="This is a random generator project which is themed around a possible habitat planets. Click and Explore. We might need it sooner than you think..."
-              stack1={<HtmlIcon />}
-              stack2={<Javascript />}
+              link="https://unique-starlight-fcac6b.netlify.app/"
+              title="Open Jobs"
+              description="We're a platform for developers to create vacation experiences that are open to the public. The platform is designed to be used by anyone, regardless of programming experience or technical skills."
+              stack1={<ReactRouter />}
+              stack2={<ReactIcon />}
               stack3={<TailwindIcon />}
             />
           </SwiperSlide>

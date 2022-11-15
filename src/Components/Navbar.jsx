@@ -23,7 +23,7 @@ const Navbar = () => {
         whileInView={{ opacity: 1 }}
         transition={{ type: "spring", duration: 3, delay: 0.5, bounce: 0.7 }}
         viewport={{ ones: true }}
-        className="md:gap-16 relative z-50 m-auto font-oswald lg:max-w-[1200px] md:max-w-[655px] max-w-full min-h-[72px] justify-center gap-24 lg:min-h-[112px] items-center flex lg:justify-between"
+        className="md:gap-16 relative z-50 m-auto font-oswald lg:max-w-[1200px] md:max-w-[655px] min-h-[72px] justify-between px-4 md:mx-0 md:justify-center gap-24 lg:min-h-[112px] items-center flex lg:justify-between"
       >
         <img src={logoMob} alt="" className="lg:min-w-[305px]" />
         <div className="md:hidden lg:hidden">

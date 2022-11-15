@@ -51,12 +51,12 @@ export default {
 
     {
       id: 1,
-      imageAvif: "Earth_2.0.avif",
-      image: "/Earth_2.0.png",
-      title: "Earth 2.0",
-      link: "https://nutopia13.github.io/Earth-2.0/",
+      imageAvif: "/DevJobs.avif",
+      image: "/DevJobs2.png",
+      title: "Open Jobs",
+      link: 'https://unique-starlight-fcac6b.netlify.app/',
       description:
-        "This is a random generator project which is themed around a possible habitat planets. Click and Explore. We might need it sooner than you think...",
+        `We're a platform for developers to create remote vacation experiences. The platform is designed to be used by anyone, regardless of programming experience.`,
     },
 
     {
