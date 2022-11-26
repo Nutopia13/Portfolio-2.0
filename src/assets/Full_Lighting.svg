@@ -1,14 +1,1 @@
-<svg width="112" height="179" viewBox="0 0 112 179" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_18_7597)">
-<path d="M39.8647 179L112 114.072L82.0573 83.7256L101.018 20.9395L28.8991 85.8517L58.8417 116.198L39.8647 179Z" fill="#FF577F"/>
-<path d="M25.4151 172.557L97.5505 107.629L67.6078 77.2827L86.5688 14.4966L14.4495 79.4088L44.3922 109.755L25.4151 172.557Z" fill="#F1D624"/>
-<path d="M25.4151 172.557L97.5505 107.629L67.6078 77.2827L86.5688 14.4966L14.4495 79.4088L44.3922 109.755L25.4151 172.557Z" stroke="#06283D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M14.1766 161.282L86.3119 96.3539L56.3693 66.0078L75.3303 3.22168L3.21101 68.1339L33.1537 98.48L14.1766 161.282Z" fill="#47B5FF"/>
-<path d="M14.1766 161.282L86.3119 96.3539L56.3693 66.0078L75.3303 3.22168L3.21101 68.1339L33.1537 98.48L14.1766 161.282Z" stroke="#06283D" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-</g>
-<defs>
-<clipPath id="clip0_18_7597">
-<rect width="112" height="179" fill="white"/>
-</clipPath>
-</defs>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="112" height="179" fill="none" viewBox="0 0 112 179"><g clip-path="url(#clip0_18_7597)"><path fill="#FF577F" d="M39.8647 179L112 114.072L82.0573 83.7256L101.018 20.9395L28.8991 85.8517L58.8417 116.198L39.8647 179Z"/><path fill="#F1D624" d="M25.4151 172.557L97.5505 107.629L67.6078 77.2827L86.5688 14.4966L14.4495 79.4088L44.3922 109.755L25.4151 172.557Z"/><path stroke="#06283D" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M25.4151 172.557L97.5505 107.629L67.6078 77.2827L86.5688 14.4966L14.4495 79.4088L44.3922 109.755L25.4151 172.557Z"/><path fill="#47B5FF" d="M14.1766 161.282L86.3119 96.3539L56.3693 66.0078L75.3303 3.22168L3.21101 68.1339L33.1537 98.48L14.1766 161.282Z"/><path stroke="#06283D" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M14.1766 161.282L86.3119 96.3539L56.3693 66.0078L75.3303 3.22168L3.21101 68.1339L33.1537 98.48L14.1766 161.282Z"/></g><defs><clipPath id="clip0_18_7597"><rect width="112" height="179" fill="#fff"/></clipPath></defs></svg>
