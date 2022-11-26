@@ -42,11 +42,10 @@ const Portfolio_Components = (props) => {
             <p className=" font-bold text-lg lg:text-2xl items-center">
               Tech Stack:
             </p>
-            <div className="flex space-x-1">
-              <Javascript />
-              <HtmlIcon />
-              <ReactIcon />
-              <TailwindIcon />
+            <div className="flex space-x-2">
+              <img src={props.item.stack1} alt="" className="w-10" />
+              <img src={props.item.stack2} alt="" className="w-10" />
+              <img src={props.item.stack3} alt="" className="w-10" />
             </div>
           </div>
         </div>

@@ -18,6 +18,8 @@ import { TailwindIcon } from "./Icons/Tailwind_Icon";
 import { HtmlIcon } from "./Icons/HTML";
 import { Javascript } from "./Icons/JavaScript";
 import { ReactRouter } from "./Icons/ReactDom";
+import { NextJsIcon } from "./Icons/Nextsjs";
+import { Firebase } from "./Icons/Firebase";
 
 const Portfolio = () => {
   const [isOpenWeather, setIsOpenWeather] = useState(true);
@@ -48,7 +50,7 @@ const Portfolio = () => {
       {!isOpenWeather && <Weather />}
       {!isOpenTicTacToe && <TicTacToe />}
 
-      <div className="lg:pt-32 pt-16">
+      <div className="lg:pt-32  lg:pr-6 pt-16">
         <motion.div
           variants={portTextVariants}
           initial="offscreen"
@@ -96,7 +98,7 @@ const Portfolio = () => {
         >
           <SwiperSlide>
             <Portfolio_Component_Mob
-              image = '/PlanetsScreen.png'
+              image="/PlanetsScreen.png"
               imageAvif="/PlanetsScreen.png"
               link="https://quiet-crepe-0ed89d.netlify.app/"
               title="The Planets"
@@ -106,23 +108,23 @@ const Portfolio = () => {
               stack3={<TailwindIcon />}
             />
           </SwiperSlide>
-          
+
           <SwiperSlide>
             <Portfolio_Component_Mob
-              image = '/DevJobs2.png'
+              image="/DevJobs2.png"
               imageAvif="Earth_2.0.avif"
               link="https://unique-starlight-fcac6b.netlify.app/"
               title="Open Jobs"
               description="We're a platform for developers to create vacation experiences that are open to the public. The platform is designed to be used by anyone, regardless of programming experience or technical skills."
               stack1={<ReactRouter />}
-              stack2={<ReactIcon />}
+              stack2={<NextJsIcon />}
               stack3={<TailwindIcon />}
             />
           </SwiperSlide>
 
           <SwiperSlide>
             <Portfolio_Component_Mob
-              image = '/Design_Agency.png'
+              image="/Design_Agency.png"
               imageAvif="Design_Agency.avif"
               link="https://inspiring-eclair-76217d.netlify.app/"
               title="Design Agency"
@@ -135,18 +137,29 @@ const Portfolio = () => {
 
           <SwiperSlide>
             <Portfolio_Component_Mob
-              image = '/MyTeam.png'
+              image="/OpenPost.png"
+              imageAvif="/OpenPost.png"
+              link="https://openpost.vercel.app/"
+              title="Open Post"
+              description="Blog Platform where you can share your code, read great code and discuss it."
+              stack1={<Firebase />}
+              stack2={<NextJsIcon />}
+              stack3={<TailwindIcon />}
+            />
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <Portfolio_Component_Mob
+              image="/MyTeam.png"
               imageAvif="/MyTeam.png"
               link="https://quiet-gumdrop-bd2ac4.netlify.app/"
-              title='My Team'
+              title="My Team"
               description="Yep, finding the right people and building high performing teams can be hard. But you don’t have to do it alone, and we’re here to change that."
               stack1={<HtmlIcon />}
               stack2={<ReactIcon />}
               stack3={<TailwindIcon />}
             />
           </SwiperSlide>
-
-    
         </Swiper>
       </div>
     </div>

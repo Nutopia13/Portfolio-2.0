@@ -83,7 +83,7 @@ const Skills = () => {
           <Skills_Mob
             title="HTML & CSS"
             description="Two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices."
-            icon="/HTMLIcon.png"
+            icon="https://api.iconify.design/vscode-icons:file-type-html.svg"
           />
         </SwiperSlide>
 
@@ -100,7 +100,23 @@ const Skills = () => {
           <Skills_Mob
             title="React JS"
             description="Declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”."
-            icon="/ReactIcon.png"
+            icon="https://api.iconify.design/vscode-icons:file-type-reactjs.svg?color=%23888888"
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Skills_Mob
+            title="Next JS"
+            description="Open-source web development framework created by Vercel enabling React-based web applications with server-side rendering and generating static websites."
+            icon="https://api.iconify.design/logos:nextjs-icon.svg?color=%23888888"
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Skills_Mob
+            title="FireBase"
+            description="Firebase is a backend platform for building Web, Android and IOS applications. It offers real time database, different APIs, multiple authentication types and hosting platform."
+            icon="https://api.iconify.design/vscode-icons:file-type-firebase.svg"
           />
         </SwiperSlide>
       </Swiper>

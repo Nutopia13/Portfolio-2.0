@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-    <div className="bg-white relative z-50 m-auto border-b-2 border-dark_blue border-solid">
+    <div className="bg-white w-full  relative z-50 border-b-2 border-dark_blue border-solid">
       <motion.nav
         initial={{
           x: -100,
@@ -23,7 +23,7 @@ const Navbar = () => {
         whileInView={{ opacity: 1 }}
         transition={{ type: "spring", duration: 3, delay: 0.5, bounce: 0.7 }}
         viewport={{ ones: true }}
-        className="md:gap-16 relative z-50 m-auto font-oswald lg:max-w-[1200px] md:max-w-[655px] min-h-[72px] justify-between px-4 md:mx-0 md:justify-center gap-24 lg:min-h-[112px] items-center flex lg:justify-between"
+        className="md:gap-16 relative lg:mx-auto z-50 font-oswald lg:max-w-[1200px] md:max-w-[655px] min-h-[72px] justify-between px-4 md:mx-0 md:justify-center gap-24 lg:min-h-[112px] items-center flex lg:justify-between"
       >
         <img src={logoMob} alt="" className="lg:min-w-[305px]" />
         <div className="md:hidden lg:hidden">
@@ -36,7 +36,7 @@ const Navbar = () => {
 
         <AnimatePresence>
           {!isOpen && (
-            <motion.div className="md:hidden popup flex justify-center fixed z-50 -top-1">
+            <motion.div className="md:hidden popup flex justify-center  fixed z-50 -top-1">
               <motion.div
                 initial={{
                   x: 200,
@@ -50,7 +50,7 @@ const Navbar = () => {
                 transition={{ duration: 0.4 }}
                 viewport={{ ones: true }}
                 exit={{ x: 300, opacity: 0 }}
-                className="popup"
+                className=""
               >
                 <motion.ul 
                 initial={{
