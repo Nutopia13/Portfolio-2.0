@@ -94,7 +94,7 @@ const Hero = () => {
               className=" relative z-0 duration-75 lg:px-[49px] md:mt-[11px] lg:py-[26px] md:max-w-[469px] md:min-h-[66px] lg:max-w-[745px] lg:max-h-[120px] position_cont mt-[6px] lg:mt-[24px]"
             >
               <h1 className="text-lg  group-hover:translate-x-0 group-hover:translate-y-0 md:text-3xl lg:text-[54px] position_text">
-                A Front-End Developer
+                Full Stack Developer
               </h1>
             </motion.div>
 
