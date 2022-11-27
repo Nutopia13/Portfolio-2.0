@@ -7,7 +7,7 @@ const Skills_Component = (props) => {
         <img
           src={props.item.icon}
           alt={props.item.name}
-          className="w-[154px]  relative z-20 top-14 lg:top-20"
+          className="w-[110px]  relative z-20 top-14 lg:top-16"
         />
         <div className="skills_text max-h-[312px] lg:max-h-[493px] px-[28px] lg:pt-[90px] pt-[70px] bg-white border-2 border-[#06283D] font-oswald text-dark_blue">
           <h3 className="font-bold lg:text-5xl text-3xl">{props.item.title}</h3>
