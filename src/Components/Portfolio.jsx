@@ -50,7 +50,7 @@ const Portfolio = () => {
       {!isOpenWeather && <Weather />}
       {!isOpenTicTacToe && <TicTacToe />}
 
-      <div className="lg:pt-32  lg:pr-6 pt-16">
+      <div className="lg:pt-32 pt-16">
         <motion.div
           variants={portTextVariants}
           initial="offscreen"
@@ -82,7 +82,7 @@ const Portfolio = () => {
           </div>
         </motion.div>
 
-        <div className="hidden progress-bar overflow-x-scroll md:flex m-auto port_cont--slide max-w-full flex-row  pt-16">
+        <div className="hidden progress-bar overflow-x-scroll md:flex m-auto port_cont--slide max-w-full flex-row  pr-8 pt-16">
           {cards}
         </div>
         <Swiper
