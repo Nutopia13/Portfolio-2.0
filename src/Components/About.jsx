@@ -83,7 +83,7 @@ const About = () => {
             </p>
           </div>
 
-          <a download href="\Nechytailo_Vladyslav_CV.pdf">
+          <a download href="/Vladyslav_Nechytailo_-_Junior_Developer.pdf">
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}

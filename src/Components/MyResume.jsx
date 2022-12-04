@@ -8,7 +8,7 @@ const MyResume = () => {
     <div>
       <div>
         <div className="mt-[30px] z-30 lg:mt-20">
-          <a target="_blank" href="\Nechytailo_Vladyslav_CV.pdf">
+          <a target="_blank" href="/Vladyslav_Nechytailo_-_Junior_Developer.pdf">
             <img
               src={arrow}
               alt=""

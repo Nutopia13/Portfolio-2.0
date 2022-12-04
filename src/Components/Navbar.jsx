@@ -86,7 +86,7 @@ const Navbar = () => {
                   <li className="pb-[42px]">
                     <a href="#">Contact</a>
                   </li>
-                  <a download href="\Nechytailo_Vladyslav_CV.pdf">
+                  <a download href="/Vladyslav_Nechytailo_-_Junior_Developer.pdf">
                     <button className="btn1 hover:shadow-none ease-in  duration-75  md:block font-bold text-xl bg-bright_yellow py-3 px-8">
                       Resume
                     </button>
@@ -116,7 +116,7 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <a download href="\Nechytailo_Vladyslav_CV.pdf">
+          <a download href="/Vladyslav_Nechytailo_-_Junior_Developer.pdf">
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
